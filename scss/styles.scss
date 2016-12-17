@@ -1,2 +1,58 @@
 @import 'partials/reset';
 @import 'partials/clearfix';
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+}
+#slider ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 300px;
+  list-style: none;
+}
+#slider ul li {
+  display: block;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+}
+a.left, a.right {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  opacity: 0.8;
+}
+a.left:hover, a.right:hover {
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+a.right {
+  right: 0;
+}
+.one {
+  background-image: url('/images/localmocos.png');
+  background-size: cover;
+  width: 100%;
+  z-index: 5;
+}
+.two {
+  background-image: url('/images/stylesforhue.png');
+  background-size: cover;
+}
+.three {
+  background-image: url('/images/nko2016.png');
+  background-size: cover;
+}
