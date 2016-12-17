@@ -42,6 +42,12 @@ a.left:hover, a.right:hover {
 a.right {
   right: 0;
 }
+a{
+  &:visited{
+    text-decoration: none;
+    color: #000000;
+  }
+}
 .one {
   background-image: url('/images/localmocos.png');
   background-size: cover;
