@@ -74,7 +74,7 @@ ul.nav li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   border: solid 2px;
 }
 #home, #work, #about {
@@ -197,11 +197,10 @@ a{
   background: $platinum;
 }
 #about {
-  height: 10vh;
+  height: 30vh;
 }
 #github-logo {
   fill: $arsenic;
-  display: block;
   height: 80px;
   width: 80px;
 }
@@ -209,17 +208,11 @@ a{
   width: 80px;
   height: 80px;
   fill: $arsenic;
-  display: block;
 }
 .logos {
   list-style-type: none;
-  display: block;
-  float: left;
   text-align: center;
   li {
     display: inline-block;
-  }
-  a {
-    position: relative;
   }
 }
