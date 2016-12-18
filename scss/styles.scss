@@ -203,11 +203,19 @@ a{
   fill: $arsenic;
   height: 80px;
   width: 80px;
+  &:hover {
+    fill: $sunset-orange;
+    transition: all 700ms;
+  }
 }
 #linkedin-logo {
   width: 80px;
   height: 80px;
   fill: $arsenic;
+  &:hover {
+    fill: $sunset-orange;
+    transition: all 700ms;
+  }
 }
 .logos {
   list-style-type: none;
