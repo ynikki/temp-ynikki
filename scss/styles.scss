@@ -6,7 +6,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .computer {
   width: 540px;
   height: 380px;
@@ -16,7 +15,6 @@
   align-items: center;
   border-radius: 10px;
 }
-
 #slider {
   position: relative;
   overflow: hidden;
@@ -72,4 +70,26 @@ a{
 .three {
   background-image: url('/images/nko2016.png');
   background-size: cover;
+}
+.stand {
+  height: 50px;
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+  border: solid 2px;
+}
+.stand:before, .stand:after {
+  content: "";
+  position: absolute;
+}
+.stand:before {
+  border-left: 13px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 50px solid #000000;
+}
+.stand:after {
+  border-right: 13px solid transparent;
+  border-left: 0px solid transparent;
+  border-bottom: 50px solid #000000;
+  right: 122px;
 }
