@@ -10,6 +10,7 @@ body{
   background: $amazonite;
   font-family: $josefin;
   font-size: 1.2rem;
+  color: $arsenic;
 }
 h2{
   font-weight: 600;
@@ -38,11 +39,38 @@ ul.nav li a {
   justify-content: flex-end;
   align-content: flex-end;
   text-align: center;
-  padding: 14px 16px;
+  padding: 13px 15px;
   text-decoration: none;
 }
-ul.nav li a:hover:not(.active){
-  background-color: $sunset-orange;
+ul.nav li a {
+  position: relative;
+  &:before, &:after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0%;
+    top: 80%;
+    margin-top: -0.5px;
+  }
+  &:before {
+    left: -2.5px;
+  }
+  &:after {
+    right: 2.5px;
+    background: $sunset-orange;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1)
+  }
+  &:hover:before {
+    background: $sunset-orange;
+    width: 90%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1)
+  }
+  &:hover:after {
+    background: transparent;
+    width: 90%;
+    transition: 0s;
+  }
 }
 .container {
   display: flex;
@@ -63,7 +91,6 @@ ul.nav li a:hover:not(.active){
   height: 100%;
 }
 .computer {
-  border: solid 2px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,6 +123,9 @@ ul.nav li a:hover:not(.active){
   width: 500px;
   height: 300px;
   text-align: center;
+  &:hover {
+    cursor: pointer;
+  }
 }
 a.left, a.right {
   position: absolute;
@@ -107,10 +137,12 @@ a.left, a.right {
   height: auto;
   text-decoration: none;
   opacity: 0.8;
+  color: $davys-grey;
 }
 a.left:hover, a.right:hover {
   opacity: 1;
   transition: all 0.2s ease;
+  color: $amazonite;
 }
 a.right {
   right: 0;
@@ -118,7 +150,7 @@ a.right {
 a{
   &:visited{
     text-decoration: none;
-    color: #000000;
+    color: $davys-grey;
   }
 }
 .one {
