@@ -1,6 +1,10 @@
 @import 'partials/reset';
 @import 'partials/clearfix';
+@import 'partials/colors';
 
+body{
+  background: $amazonite;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -74,7 +78,7 @@ a{
 }
 .stand {
   height: 50px;
-  width: 80px;
+  width: 85px;
   display: block;
   margin: 0 auto;
   border: solid 2px;
