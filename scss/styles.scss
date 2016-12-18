@@ -3,8 +3,12 @@
 @import 'partials/colors';
 @import 'partials/mixins';
 
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700');
+$josefin:'Josefin Sans', sans-serif;
+
 body{
   background: $amazonite;
+  font-family: $josefin;
 }
 ul.nav {
   list-style-type: none;
@@ -15,6 +19,7 @@ ul.nav {
   top: 0;
   width: 100%;
   border: solid 2px;
+  font-weight: 700;
 }
 ul.nav li {
   float: left;
@@ -121,6 +126,9 @@ a{
 .three {
   background-image: url('/images/nko2016.png');
   background-size: cover;
+}
+.bottom {
+  border: solid 2px;
 }
 .stand {
   height: 50px;
