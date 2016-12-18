@@ -29,13 +29,6 @@ ul.nav li a {
 ul.nav li a:hover:not(.active){
   background-color: $sunset-orange;
 }
-ul.nav li.right {
-  float: right;
-
-  @include small {
-    float: none
-  }
-}
 .container {
   display: flex;
   justify-content: center;
