@@ -15,6 +15,10 @@ ul.nav {
 }
 ul.nav li {
   float: left;
+
+  @include small {
+    float: none;
+  }
 }
 ul.nav li a {
   display: block;
@@ -24,6 +28,13 @@ ul.nav li a {
 }
 ul.nav li a:hover:not(.active){
   background-color: $sunset-orange;
+}
+ul.nav li.right {
+  float: right;
+
+  @include small {
+    float: none
+  }
 }
 .container {
   display: flex;
