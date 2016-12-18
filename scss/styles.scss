@@ -36,8 +36,6 @@ ul.nav li {
 }
 ul.nav li a {
   display: block;
-  justify-content: flex-end;
-  align-content: flex-end;
   text-align: center;
   padding: 13px 15px;
   text-decoration: none;
@@ -203,7 +201,7 @@ a{
 }
 #github-logo {
   fill: $arsenic;
-  display: inline-block;
+  display: block;
   height: 80px;
   width: 80px;
 }
@@ -211,4 +209,17 @@ a{
   width: 80px;
   height: 80px;
   fill: $arsenic;
+  display: block;
+}
+.logos {
+  list-style-type: none;
+  display: block;
+  float: left;
+  text-align: center;
+  li {
+    display: inline-block;
+  }
+  a {
+    position: relative;
+  }
 }
