@@ -72,16 +72,17 @@ ul.nav li a:hover:not(.active){
 .screen {
   width: 540px;
   height: 380px;
-  border: solid 2px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  background: $davys-grey;
 }
 #slider {
   position: relative;
   overflow: hidden;
   margin: 20px auto 0 auto;
+  border: solid 2px $platinum;
 }
 #slider ul {
   margin: 0;
@@ -134,15 +135,12 @@ a{
   background-image: url('/images/nko2016.png');
   background-size: cover;
 }
-.bottom {
-  border: solid 2px;
-}
 .stand {
   height: 50px;
   width: 72px;
   display: block;
   margin: 0 auto;
-  border: solid 2px;
+  background: $platinum;
 }
 .stand:before, .stand:after {
   content: "";
@@ -151,14 +149,14 @@ a{
 .stand:before {
   border-left: 13px solid transparent;
   border-right: 0px solid transparent;
-  border-bottom: 52px solid #000000;
-  left: 46%;
+  border-bottom: 52px solid $platinum;
+  left: 47%;
 }
 .stand:after {
   border-right: 13px solid transparent;
   border-left: 0px solid transparent;
-  border-bottom: 52px solid #000000;
-  right: 46%;
+  border-bottom: 52px solid $platinum;
+  right: 47%;
 }
 .foot {
   height: 5px;
@@ -166,7 +164,7 @@ a{
   display: block;
   margin: 0 auto;
   border-radius: 10px 10px 0 0;
-  border: solid 2px;
+  background: $platinum;
 }
 #about {
   height: 10vh;
