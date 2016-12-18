@@ -85,11 +85,20 @@ a{
 .stand:before {
   border-left: 13px solid transparent;
   border-right: 0px solid transparent;
-  border-bottom: 50px solid #000000;
+  border-bottom: 52px solid #000000;
+  left: 46%;
 }
 .stand:after {
   border-right: 13px solid transparent;
   border-left: 0px solid transparent;
-  border-bottom: 50px solid #000000;
-  right: 122px;
+  border-bottom: 52px solid #000000;
+  right: 46%;
+}
+.foot {
+  height: 5px;
+  width: 130px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px 10px 0 0;
+  border: solid 2px;
 }
