@@ -11,6 +11,9 @@ ul.nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
   border: solid 2px;
 }
 ul.nav li {
