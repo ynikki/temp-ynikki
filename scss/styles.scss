@@ -76,6 +76,7 @@ ul.nav li a {
   align-items: center;
   height: 100%;
   border: solid 2px;
+  padding-top: 60px;
 }
 #home, #work, #about {
   margin-bottom: 10px;
@@ -141,6 +142,7 @@ a.left:hover, a.right:hover {
   opacity: 1;
   transition: all 0.2s ease;
   color: $amazonite;
+  transition: all 700ms;
 }
 a.right {
   right: 0;
