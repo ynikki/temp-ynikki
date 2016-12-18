@@ -25,6 +25,8 @@ ul.nav li {
 }
 ul.nav li a {
   display: block;
+  justify-content: flex-end;
+  align-content: flex-end;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -37,8 +39,25 @@ ul.nav li a:hover:not(.active){
   justify-content: center;
   align-items: center;
   height: 100vh;
+  border: solid 2px;
+}
+#home, #work, #about {
+  margin-bottom: 10px;
+  border: solid 2px;
+}
+#home {
+  height: 10vh;
+}
+#work {
+  height: 100%;
 }
 .computer {
+  border: solid 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.screen {
   width: 540px;
   height: 380px;
   border: solid 2px;
@@ -133,4 +152,7 @@ a{
   margin: 0 auto;
   border-radius: 10px 10px 0 0;
   border: solid 2px;
+}
+#about {
+  height: 10vh;
 }
