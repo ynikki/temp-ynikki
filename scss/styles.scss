@@ -214,6 +214,10 @@ a{
 }
 #about {
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #github-logo {
   fill: $arsenic;
