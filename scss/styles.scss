@@ -84,7 +84,12 @@ ul.nav li a {
   border: solid 2px;
 }
 #home {
-  height: 10vh;
+  height: 100%;
+}
+.artwork {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .egg {
   background-image: url('/svg/egghead.svg');
