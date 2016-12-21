@@ -84,9 +84,9 @@ ul.nav li a {
 #home, #work, #about {
   margin-bottom: 10px;
   padding: 10px;
-  border: solid 2px;
 }
 #home {
+  border: solid 2px;
   height: 100%;
 }
 .artwork {
@@ -102,12 +102,24 @@ ul.nav li a {
 }
 #work {
   height: 100%;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  border: solid 2px;
+}
+.computerArt {
+  border: solid 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .computer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin-top: 10px;
+  padding: 10px;
 }
 .screen {
   width: 540px;
@@ -170,8 +182,6 @@ a{
 .one {
   background-image: url('/images/localmocos.png');
   background-size: cover;
-  width: 100%;
-  z-index: 5;
 }
 .two {
   background-image: url('/images/stylesforhue.png');
@@ -180,6 +190,11 @@ a{
 .three {
   background-image: url('/images/nko2016.png');
   background-size: cover;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .stand {
   height: 50px;
@@ -211,6 +226,14 @@ a{
   margin: 0 auto;
   border-radius: 10px 10px 0 0;
   background: $platinum;
+}
+.information {
+  border: solid 2px;
+  width: 400px;
+  padding: 10px;
+  p {
+    line-height: 1.7rem;
+  }
 }
 #about {
   height: 100%;
