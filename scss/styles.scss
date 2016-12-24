@@ -199,13 +199,13 @@ a{
 @mixin trapezoid($width, $color) {
   width: $width;
   height: 0;
-  border-right: $width / 2 solid transparent;
+  border-right: $width / 4.5 solid transparent;
   border-bottom: $width solid $color;
-  border-left: $width / 2 solid transparent;
+  border-left: $width / 4.5 solid transparent;
   box-sizing: content-box;
 }
 .stand {
-  @include trapezoid(40px, $platinum);
+  @include trapezoid(65px, $platinum);
 }
 // .stand {
 //   height: 50px;
