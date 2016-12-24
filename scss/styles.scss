@@ -207,29 +207,6 @@ a{
 .stand {
   @include trapezoid(65px, $platinum);
 }
-// .stand {
-//   height: 50px;
-//   width: 72px;
-//   display: block;
-//   margin: 0 auto;
-//   background: $platinum;
-// }
-// .stand:before, .stand:after {
-//   content: "";
-//   position: absolute;
-// }
-// .stand:before {
-//   border-left: 13px solid transparent;
-//   border-right: 0px solid transparent;
-//   border-bottom: 52px solid $platinum;
-//   left: 47%;
-// }
-// .stand:after {
-//   border-right: 13px solid transparent;
-//   border-left: 0px solid transparent;
-//   border-bottom: 52px solid $platinum;
-//   right: 47%;
-// }
 .foot {
   height: 5px;
   width: 130px;
