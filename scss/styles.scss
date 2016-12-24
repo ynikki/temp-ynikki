@@ -85,7 +85,11 @@ ul.nav li a {
   padding: 3em 3em 2em 3em;
 }
 #home {
-  height: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .artwork {
   display: flex;
@@ -220,7 +224,7 @@ a{
   }
 }
 #about {
-  height: 100%;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,7 +240,6 @@ a{
   }
 }
 .content {
-  height: 100%;
   width: 25vw;
   line-height: 2rem;
   text-align: center;
