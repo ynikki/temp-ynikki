@@ -94,7 +94,7 @@ ul.nav li a {
   justify-content: center;
   align-items: center;
 }
-.egg {
+#eggy {
   background-image: url('/svg/egghead.svg');
   background-repeat: no-repeat;
   height: 150px;
@@ -196,29 +196,40 @@ a{
   justify-content: center;
   align-items: center;
 }
+@mixin trapezoid($width, $color) {
+  width: $width;
+  height: 0;
+  border-right: $width / 2 solid transparent;
+  border-bottom: $width solid $color;
+  border-left: $width / 2 solid transparent;
+  box-sizing: content-box;
+}
 .stand {
-  height: 50px;
-  width: 72px;
-  display: block;
-  margin: 0 auto;
-  background: $platinum;
+  @include trapezoid(40px, $platinum);
 }
-.stand:before, .stand:after {
-  content: "";
-  position: absolute;
-}
-.stand:before {
-  border-left: 13px solid transparent;
-  border-right: 0px solid transparent;
-  border-bottom: 52px solid $platinum;
-  left: 47%;
-}
-.stand:after {
-  border-right: 13px solid transparent;
-  border-left: 0px solid transparent;
-  border-bottom: 52px solid $platinum;
-  right: 47%;
-}
+// .stand {
+//   height: 50px;
+//   width: 72px;
+//   display: block;
+//   margin: 0 auto;
+//   background: $platinum;
+// }
+// .stand:before, .stand:after {
+//   content: "";
+//   position: absolute;
+// }
+// .stand:before {
+//   border-left: 13px solid transparent;
+//   border-right: 0px solid transparent;
+//   border-bottom: 52px solid $platinum;
+//   left: 47%;
+// }
+// .stand:after {
+//   border-right: 13px solid transparent;
+//   border-left: 0px solid transparent;
+//   border-bottom: 52px solid $platinum;
+//   right: 47%;
+// }
 .foot {
   height: 5px;
   width: 130px;
