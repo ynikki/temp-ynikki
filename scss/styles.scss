@@ -83,7 +83,7 @@ ul.nav li a {
 }
 #home, #work, #about {
   margin-bottom: 10px;
-  padding: 3em 0;
+  padding: 3em;
 }
 #home {
   border: solid 2px;
@@ -133,13 +133,13 @@ ul.nav li a {
 #slider {
   position: relative;
   overflow: hidden;
-  margin: 20px auto 0 auto;
+  // margin: 20px auto 0 auto;
   border: solid 2px $platinum;
 }
 #slider ul {
   margin: 0;
   padding: 0;
-  position: relative;
+  // position: relative;
   height: 300px;
   list-style: none;
 }
