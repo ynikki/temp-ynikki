@@ -75,7 +75,6 @@ ul.nav li a {
   justify-content: center;
   align-items: center;
   height: 100%;
-  border: solid 2px;
   padding-top: 60px;
 }
 .page-wrap {
@@ -83,10 +82,9 @@ ul.nav li a {
 }
 #home, #work, #about {
   margin-bottom: 10px;
-  padding: 3em;
+  padding: 3em 3em 2em 3em;
 }
 #home {
-  border: solid 2px;
   height: 100%;
 }
 .artwork {
@@ -105,7 +103,6 @@ ul.nav li a {
   // display: flex;
   // justify-content: center;
   // align-items: center;
-  border: solid 2px;
 }
 .computerArt {
   border: solid 2px;
