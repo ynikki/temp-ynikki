@@ -1,14 +1,10 @@
 $(function() {
   var s_egg = Snap("#eggy");
-  console.log(s_egg, 's_egg');
 
   Snap.load("/svg/egghead.svg", function(f) {
-    lefteye = f.select("#left_eye");
-    righteye = f.select("#right_eye");
-    console.log(lefteye, 'hay');
-    console.log(righteye, 'bae');
-
-    s_egg.append(lefteye);
+    lefteye = f.selectAll("#left_eye");
+    righteye = f.selectAll("#right_eye");
+    s_egg.append(f);
 
     function blinkingeyes() {
       lefteye.animate({ transform: 'scaleX(1.3, 0.1)' }, 300, mina.ease, function() {
