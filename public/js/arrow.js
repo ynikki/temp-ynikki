@@ -9,8 +9,8 @@ $(function() {
   $('#slider ul li:first-child').prependTo('#slider ul');
 
   function goLeft() {
-    $('#slider ul').animate({ "left": "+ sliderWidth"}, 200, function() {
-      $('#slider ul li: last-child').prependTo('#slider ul');
+    $('#slider ul').animate({ "left": "- sliderWidth"}, 200, function() {
+      $('#slider ul li:last-child').prependTo('#slider ul');
       $('#slider ul').css('left', '');
     });
   };
