@@ -26,29 +26,30 @@ html(lang="en")
           .computerArt
             .computer
               .screen
-                #slider
+                section#slider
                   a(href="#" class="left")
                     i(class="fa fa-chevron-left" aria-hidden="true")
                   a(href="#" class="right")
                     i(class="fa fa-chevron-right" aria-hidden="true")
-                  ul
+                  ul.slider-wrapper
                     li(class="slide one")
+                      img(src="/images/localmocos.png")
+                      .caption
+                        h1.slider-title HACC2016 | Localmocos
+                        p Participating in the state of Hawaii hackathon.
                     li(class="slide two")
+                      img(src="/images/stylesforhue.png")
+                      .caption
+                        h1.slider-title Styles for Hue
+                        p DevLeague final project.
                     li(class="slide three")
+                      img(src="/images/nko2016.png")
+                      .caption
+                        h1.slider-title NKO 2016 | Looks Good
+                        p Participated in a 48 hour hackathon.
               .bottom
                 .stand
               .foot
-            .information
-              .hacc2016
-                p HACC2016 | Locomocos 
-                p Front-end Development
-                p Partcipated in the state of Hawai'i first hackathon.
-              .stylesforhue
-                p Styles for Hue
-                p Front-end Development
-              .nko2016
-                p Node Knockout 2016 | Looks Good!
-                p Front-end Development
         #about
           .content
             h2 What would you like to know?
