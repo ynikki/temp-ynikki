@@ -7,14 +7,16 @@ html(lang="en")
     link(href='/css/styles.css' rel='stylesheet')
     link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet")
   body
-    .nav
-      ul(class="nav links")
-        li
-          a(class="active" href="#home") Home
-        li
-          a(href="#work") Work
-        li
-          a(href="#about") About
+    header.banner
+      .grid
+        .nav(role="navigation")
+          ul(class="nav links")
+            li
+              a(class="active" href="#home") Home
+            li
+              a(href="#work") Work
+            li
+              a(href="#about") About
     .container
       .page-wrap
         #home
@@ -27,9 +29,9 @@ html(lang="en")
             .computer
               .screen
                 section#slider
-                  a(href="#" class="left")
+                  a(href="#left" class="left")
                     i(class="fa fa-chevron-left" aria-hidden="true")
-                  a(href="#" class="right")
+                  a(href="#right" class="right")
                     i(class="fa fa-chevron-right" aria-hidden="true")
                   ul.slider-wrapper
                     li(class="slide one")
