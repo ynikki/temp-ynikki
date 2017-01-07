@@ -6,7 +6,7 @@ $(function() {
 
   $('#slider').css({ "width": "sliderUlWidth", "marginLeft": "- sliderWidth" });
   $('#slider ul').css({ "width": "sliderUlWidth", "marginLeft": "- sliderWidth" });
-  $('#slider ul li:last-child').prependTo('#slider ul');
+  $('#slider ul li:first-child').prependTo('#slider ul');
 
   function goLeft() {
     $('#slider ul').animate({ "left": "+ sliderWidth"}, 200, function() {
