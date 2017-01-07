@@ -183,6 +183,7 @@ ul.nav li a {
   width: 100%;
   padding: 10px;
   color: #FFF;
+  display: table;
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
   -o-transform: translateY(100%);
@@ -216,18 +217,6 @@ a{
     color: $davys-grey;
   }
 }
-// .one {
-//   background-image: url('/images/localmocos.png');
-//   background-size: cover;
-// }
-// .two {
-//   background-image: url('/images/stylesforhue.png');
-//   background-size: cover;
-// }
-// .three {
-//   background-image: url('/images/nko2016.png');
-//   background-size: cover;
-// }
 .bottom {
   display: flex;
   justify-content: center;
