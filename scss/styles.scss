@@ -7,6 +7,17 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700');
 $josefin:'Josefin Sans', sans-serif;
 
+* {
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 body{
   background: $amazonite;
   font-family: $josefin;
@@ -52,9 +63,9 @@ nav {
 .banner {
   height: 100%;
   width: 100%;
+  max-height: 56px;
   position: absolute;
   top: 0;
-  max-height: 56px;
   overflow: hidden;
   transition: all 0.3s;
   background: none;
@@ -111,7 +122,6 @@ nav {
   line-height: 1.4;
 }
 .section {
-  background: #333;
   color: #CCC;
 }
 .is-sticky {
@@ -120,16 +130,7 @@ nav {
   background: rgba(255, 255, 255, 0.94);
   opacity: 1;
 }
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding-top: 60px;
-}
-.page-wrap {
-  width: 100%;
-}
+
 #home, #work, #about {
   margin-bottom: 10px;
   padding: 3em 3em 2em 3em;
