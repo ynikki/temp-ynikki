@@ -208,6 +208,12 @@ ul.nav-list li a {
 }
 .hacc-icon {
   background: url('/images/hacc_2016.png') no-repeat center;
+  background-size: contain;
+  height: 60px;
+}
+.stylesforhue-icon {
+  background: url('/images/stylesforhue_ico.png') no-repeat center;
+  background-size: cover;
   height: 60px;
 }
 .work-info {
