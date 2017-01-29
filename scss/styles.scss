@@ -36,6 +36,33 @@ h2{
 a {
   text-decoration: none;
 }
+nav a {
+  position: relative;
+  padding-bottom: 3px;
+  overflow: hidden;
+  transition: color .3s cubic-bezier(0.11, 0.7, 0, 1);
+  letter-spacing: .15rem;
+  line-height: 1.8;
+}
+nav a:hover {
+  color: $sunset-orange;
+}
+nav a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: $sunset-orange;
+  content: "";
+  transform: scale(0);
+  transition: transform .3s cubic-bezier(0.11, 0.7, 0, 1);
+}
+
+nav a:hover:after {
+  transform: scale(1);
+}
 nav {
   @media only screen and (max-width: 766px) {
     width: 100%;
@@ -91,14 +118,15 @@ ul.nav-list li a {
 .grid {
   max-width: 1040px;
   margin: 0 auto;
-  padding: 0 5%;
+  padding: 1.5% 5%;
   float: right;
 
   .banner & {
+    color: #FFF;
     padding: 0;
     max-width: 1040px;
     margin: 0 auto;
-    padding: 0 5%;
+    padding: 1.5% 5%;
     display: flex;
     align-items: center;
   }
@@ -158,6 +186,23 @@ ul.nav-list li a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.hacc-icon {
+  background: url('/images/hacc_2016.png') no-repeat;
+  height: 60px;
+}
+.work-info {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  line-height: 2 ;
+
+  h2 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .computerArt {
   display: flex;
