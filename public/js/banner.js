@@ -5,9 +5,9 @@ $(function() {
   var hero_height = $('.hero').height();
   var offset_val = hero_height - header_height;
   var eventType = ((document.ontouchstart !== null) ? 'click': 'touchstart');
-  var scroll_top = $(window).scrollTop();
 
   function navSlide() {
+    var scroll_top = $(window).scrollTop();
     if(scroll_top >= offset_val) {
       $nav_header.addClass('is-sticky');
     } else {
@@ -18,7 +18,7 @@ $(function() {
   function menuToggle() {
     if($nav_header.hasClass('is-open')) {
       $root.removeClass('pinned');
-      $root.removeClass('is-open');
+      $nav_header.removeClass('is-open');
     } else {
       $root.addClass('pinned');
       $nav_header.addClass('is-open');
@@ -37,7 +37,7 @@ $(function() {
     var offset = header_height;
     var target = $(id).offset().top - offset;
 
-    $('.banner').animate({
+    $('html, body').animate({
       scrollTop: target
     }, 500);
 
