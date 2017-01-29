@@ -19,7 +19,6 @@ body, html {
   height: 100%;
 }
 body{
-  background: $amazonite;
   font-family: $josefin;
   font-size: 1.2rem;
   color: $arsenic;
@@ -110,7 +109,7 @@ ul.nav-list li a {
     position: fixed;
     top: 0;
     overflow: scroll;
-    background: (255, 255, 255, 0.93);
+    background: rgba(216, 216, 216, 0.94);
     opacity: 1;
   }
 }
@@ -156,7 +155,7 @@ ul.nav-list li a {
 .is-sticky {
   position: fixed;
   top: 0;
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(216, 216, 216, 0.93);
   opacity: 1;
 }
 
@@ -187,8 +186,24 @@ ul.nav-list li a {
   align-items: center;
   flex-direction: column;
 }
+.icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  width: 110px;
+  display: block;
+  margin: 1em;
+  line-height: 2;
+
+  p {
+    display: flex;
+    justify-content: center;
+  }
+}
 .hacc-icon {
-  background: url('/images/hacc_2016.png') no-repeat;
+  background: url('/images/hacc_2016.png') no-repeat center;
   height: 60px;
 }
 .work-info {
