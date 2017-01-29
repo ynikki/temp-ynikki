@@ -197,6 +197,10 @@ ul.nav-list li a {
   margin: 1em;
   line-height: 2;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   p {
     display: flex;
     justify-content: center;
