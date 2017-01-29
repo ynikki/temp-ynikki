@@ -16,71 +16,48 @@ body{
 h2{
   font-weight: 600;
 }
-ul.nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  border: solid 2px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-ul.nav li {
-  float: left;
-
-  @include small {
-    float: none;
-  }
-}
-ul.nav li a {
-  display: block;
-  text-align: center;
-  padding: 13px 15px;
+a {
   text-decoration: none;
 }
-ul.nav li a {
-  position: relative;
-  &:before, &:after {
-    position: absolute;
-    content: '';
-    display: block;
-    height: 2px;
-    width: 0%;
-    top: 80%;
-    margin-top: -0.5px;
+nav {
+  @media only screen and (max-width: 766px) {
+    width: 100%;
   }
-  &:before {
-    left: -2.5px;
+  a {
+    color: #000;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    @media only screen and (min-width: 766px) {
+      font-size: 1rem;
+    }
   }
-  &:after {
-    right: 2.5px;
-    background: $sunset-orange;
-    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1)
-  }
-  &:hover:before {
-    background: $sunset-orange;
-    width: 90%;
-    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1)
-  }
-  &:hover:after {
-    background: transparent;
-    width: 90%;
-    transition: 0s;
+}
+.nav-list {
+  list-style: none;
+  padding-left: 0;
+}
+.nav-list-item {
+  line-height: 1.5;
+  @media only screen and (min-width: 766px) {
+    display: inline-block;
+    margin-left: 35px;
   }
 }
 .banner {
   height: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
   max-height: 56px;
-  width: 100%;
   overflow: hidden;
   transition: all 0.3s;
   background: none;
   z-index: 999;
+
+  @media only screen and (min-width: 766px) {
+    height: auto;
+  }
+
   &.is-open {
     max-height: 100%;
     position: fixed;
@@ -90,10 +67,12 @@ ul.nav li a {
     opacity: 1;
   }
 }
+
 .grid {
   max-width: 1040px;
   margin: 0 auto;
   padding: 0 5%;
+  
   .banner & {
     padding: 0;
     max-width: 1040px;
@@ -132,20 +111,6 @@ ul.nav li a {
   top: 0;
   background: rgba(255, 255, 255, 0.94);
   opacity: 1;
-}
-.or-divider {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 0 1em;
-  &:before {
-    content: '';
-    height: .1em;
-    background: #CCC;
-    flex: 1;
-    margin: 0 0 0 .25em;
-  }
 }
 .container {
   display: flex;
