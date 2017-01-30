@@ -191,7 +191,7 @@ ul.nav-list li a {
   justify-content: center;
   align-items: center;
 }
-.icons {
+.nav-icons {
   width: 110px;
   display: block;
   margin: 1em;
@@ -199,11 +199,6 @@ ul.nav-list li a {
 
   &:hover {
     cursor: pointer;
-  }
-
-  p {
-    display: flex;
-    justify-content: center;
   }
 }
 .hacc-icon {
