@@ -59,8 +59,8 @@ $(function () {
        $('.before').removeClass("before");     
   }
   
-  $(".prev").on('click', goNext);
-  $(".next").on('click', goPrev);
+  $(".prev").on('click', goPrev);
+  $(".next").on('click', goNext);
   
   $('.nav-icons').on('click', getByIndex); 
   
