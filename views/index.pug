@@ -31,40 +31,41 @@ html(lang="en")
           p These are the most recent projects that I have worked on in since 2016.
         .work-icons
           .work-icons-wrapper
-            ul(class="icon-list" role="tablist")
-              li(class="nav-icons" role="presentation" id="1" data-image="1")
-                a#hacc(alt="1")
+            ul(class="icon-list" role="tablist" id="indicators")
+              li(class="active nav-icons one " role="presentation" id="1")
+                a.nav-link#hacc(alt="1")
                   figure.hacc-icon
                   |HACC 2016
-              li(class="nav-icons" role="presentation" id="2" data-image="2")
-                a#stylesforhue(alt="2")
+              li(class="nav-icons two" role="presentation" id="2")
+                a.nav-link#stylesforhue(alt="2")
                   figure.stylesforhue-icon
                   |Styles For Hue
-              li(class="nav-icons" role="presentation" id="3" data-image="3")
-                a#nko(alt="3")
+              li(class="nav-icons three" role="presentation" id="3")
+                a.nav-link#nko(alt="3")
                   figure.nko-icon
                   |Node Knockout
         .computerArt
           .computer
             .screen
-              section#slider
-                a(href="#left" class="left")
+              .arrows
+                a(href="#prev" class="prev")
                   i(class="fa fa-chevron-left" aria-hidden="true")
-                a(href="#right" class="right")
+                a(href="#next" class="next")
                   i(class="fa fa-chevron-right" aria-hidden="true")
+              section#slider
                 ul.slider-wrapper
-                  li(class="slide one" id="1")
-                    img(src="/images/localmocos.png" alt="1")
+                  li(class="current slide one" id="1")
+                    img(src="/images/localmocos.png" alt="")
                     .caption
                       h1.slider-title HACC2016 | Localmocos
                       p Participating in the state of Hawaii hackathon.
                   li(class="slide two" id="2")
-                    img(src="/images/stylesforhue.png" alt="2")
+                    img(src="/images/stylesforhue.png" alt="")
                     .caption
                       h1.slider-title Styles for Hue
                       p DevLeague final project.
                   li(class="slide three" id="3")
-                    img(src="/images/nko2016.png" alt="3")
+                    img(src="/images/nko2016.png" alt="")
                     .caption
                       h1.slider-title NKO 2016 | Looks Good
                       p Participated in a 48 hour hackathon.
