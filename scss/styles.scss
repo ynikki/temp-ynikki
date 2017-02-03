@@ -201,6 +201,14 @@ ul.nav-list li a {
     cursor: pointer;
   }
 }
+.selected:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  bottom: -15px;
+  left: calc(50% - 15px);
+  content: "";
+}
 .hacc-icon {
   background: url('/images/hacc_2016.png') no-repeat center;
   background-size: contain;
@@ -243,38 +251,68 @@ ul.nav-list li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+  // display: block;
+  z-index: 2;
   border-radius: 10px;
   background: $davys-grey;
 }
 #slider {
   position: relative;
-  overflow: hidden;
   width: 500px;
-  height: 280px;
+  // height: 280px;
   // margin: 20px auto 0 auto;
   border: solid 2px $platinum;
+}
+#slider img.previous {
+  z-index: 1;
+}
+#slider img.current {
+  z-index: 5;
 }
 .arrow {
   border: solid 2px #FFF;
 }
+.full {
+  transition: all 0.2s;
+}
 #slider ul {
   margin: 0;
   padding: 0;
-  // position: relative;
+  position: relative;
+  // display: inline-block;
   height: 300px;
   list-style: none;
 }
 #slider ul li {
-  display: block;
+  // display: block;
   width: 500px;
   height: 300px;
   text-align: center;
+  position: relative;
   &:hover {
     cursor: pointer;
   }
 }
+
+.slide {
+  position: absolute;
+  display: none;
+}
+.slide:first-child {
+  display: block;
+}
+.slider-wrapper {
+  z-index: 500;
+  position: relative;
+  overflow: hidden;
+}
 .slider-wrapper li {
   display: none;
+}
+.slider-wrapper .current {
+  display: block;
 }
 .slider-wrapper li:hover .caption {
   -webkit-transform: translateY(0);
@@ -286,9 +324,9 @@ ul.nav-list li a {
   display: block;
 }
 .slider-wrapper img {
-  // position: absolute;
+  position: absolute;
   max-width: 100%;
-  height: auto;
+  // height: auto;
   top: 0;
   left: 0;
 }
@@ -307,7 +345,7 @@ ul.nav-list li a {
   transform: translateY(100%);
   opacity: 0;
 }
-a.left, a.right {
+a.prev, a.next {
   position: absolute;
   top: 40%;
   z-index: 999;
@@ -319,14 +357,14 @@ a.left, a.right {
   opacity: 0.8;
   color: $davys-grey;
 }
-a.left:hover, a.right:hover {
+a.prev:hover, a.next:hover {
   opacity: 1;
   transition: all 0.2s ease;
   color: $amazonite;
   transition: all 700ms;
 }
-a.right {
-  right: 0;
+a.next {
+  right: 20px;
 }
 a{
   &:visited{
