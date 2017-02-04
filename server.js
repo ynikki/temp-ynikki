@@ -25,6 +25,10 @@ app.get('/hacc', function(req, res) {
   res.render('hacc');
 });
 
+app.get('/stylesforhue', function(req, res) {
+  res.render('stylesforhue');
+});
+
 app.use('/404', function (req, res) {
   res.status(404).render('404');
 });
