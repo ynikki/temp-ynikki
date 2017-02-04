@@ -231,6 +231,12 @@ ul.nav-list li a {
     justify-content: center;
     align-items: center;
   }
+
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .computerArt {
   display: flex;
@@ -265,12 +271,12 @@ ul.nav-list li a {
   // margin: 20px auto 0 auto;
   border: solid 2px $platinum;
 }
-#slider img.previous {
-  z-index: 1;
-}
-#slider img.current {
-  z-index: 5;
-}
+// #slider img.previous {
+//   z-index: 1;
+// }
+// #slider img.current {
+//   z-index: 5;
+// }
 .arrow {
   border: solid 2px #FFF;
 }
@@ -403,6 +409,24 @@ a{
   p {
     line-height: 1.7rem;
   }
+}
+#descriptions {
+  height: 3em;
+  position: relative;
+}
+#descriptions:before,
+#descriptions:after {
+  display: table;
+  content: ' ';
+}
+#descriptions:after {
+  clear: both;
+}
+.description {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
 }
 #about {
   height: 80vh;
