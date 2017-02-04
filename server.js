@@ -29,6 +29,10 @@ app.get('/stylesforhue', function(req, res) {
   res.render('stylesforhue');
 });
 
+app.get('/nko', function(req, res) {
+  res.render('nko');
+});
+
 app.use('/404', function (req, res) {
   res.status(404).render('404');
 });
