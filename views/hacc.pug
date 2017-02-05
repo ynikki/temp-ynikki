@@ -1,6 +1,9 @@
 doctype html
 include includes/head.pug
 body
-  header.banner-photo.hacc-photo
-  include includes/navigation.pug
+  #wrap
+    header.banner-photo.hacc-photo
+    include includes/navigation.pug
   main.hacc-wrapper
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+  script(src="/js/navscroll.js")
