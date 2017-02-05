@@ -507,3 +507,30 @@ a{
   background-size: cover;
   height: 400px;
 }
+
+////////   PHOTO GALLERY   /////////
+#layout-images {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  h1 {
+    display: flex;
+  }
+}
+.gallery-images {
+  float: left;
+  width: 48%;
+}
+.image img {
+  margin: 10px;
+  width: 150px;
+  box-sizing: border-box;
+}
+.thumbs {
+  img {
+    vertical-align: middle;
+    box-sizing: border-box;
+  }
+}
