@@ -502,24 +502,61 @@ a{
 /////////////////////////////
 ////// HACC 2016 PAGE //////
 ///////////////////////////
+#wrap nav {
+    float: right;
+  ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+    margin: 10px;
+  }
+}
+#wrap {
+  position: relative;
+}
+.banner-photo {
+
+  .fix-nav & {
+    background: #eee;
+  }
+}
+.nav-wrap {
+  position: relative;
+  z-index: 999;
+
+  .fix-nav & {
+    position: fixed;
+    top: 10px;
+  }
+}
 .hacc-photo {
   background: url('/images/hacc/diamondhead.jpg') center 50%;
   background-size: cover;
   height: 400px;
 }
-
+.hacc-intro {
+  margin: 20px;
+  line-height: 1.5rem;
+  h1 {
+    font-size: 2rem;
+    line-height: 2;
+  }
+}
 ////////   PHOTO GALLERY   /////////
 #layout-images {
   width: 100%;
   height: 80vh;
 }
 .layout {
-  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-content: center;
+  margin-bottom: 15px;
   h1 {
     font-size: 2rem;
+    letter-spacing: 0.5rem;
   }
 }
 #photo-gallery {
@@ -531,8 +568,9 @@ a{
   z-index: 2;
 }
 .gallery-wrapper {
-  width: 500px;
+  width: 550px;
   height: 300px;
+  margin: 5px;
   padding-bottom: 10px;
 }
 .gallery-images {
@@ -548,12 +586,16 @@ a{
     width: 500px;
   }
 }
+.current img {
+  cursor: pointer;
+}
 .thumbs {
   img {
     width: 150px;
     vertical-align: middle;
     margin: 10px;
     box-sizing: border-box;
+    cursor: pointer;
 
     &:last-child {
       margin-right: 0px;
