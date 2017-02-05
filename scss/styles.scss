@@ -274,7 +274,7 @@ ul.nav-list li a {
 .arrow {
   border: solid 2px #FFF;
 }
-.full {
+.active {
   transition: all 0.2s;
 }
 #slider ul {
@@ -295,7 +295,6 @@ ul.nav-list li a {
     cursor: pointer;
   }
 }
-
 .slide {
   position: absolute;
   display: none;
@@ -404,18 +403,31 @@ a{
     line-height: 1.7rem;
   }
 }
+.active {
+  transition: all 0.2s;
+}
 #descriptions {
-  width: 100%;
   height: 7em;
-  padding: 1% 1% 5% 1%;
+  width: 100%;
   background-color: #FFF;
   position: relative;
-  z-index: 9;
   line-height: 1.2;
+  overflow: hidden;
 }
-#descriptions > div {
+#descriptions .now {
+  display: block;
+}
+.description {
   position: absolute;
   background-color: #FFF;
+  display: none;
+}
+.description:first-child {
+  display: block;
+}
+.description div {
+  position: absolute;
+  max-width: 100%;
 }
 #about {
   height: 80vh;
