@@ -35,6 +35,7 @@ h2{
 a {
   text-decoration: none;
 }
+////////// NAVIGATION //////////
 nav a {
   position: relative;
   padding-bottom: 3px;
@@ -93,6 +94,7 @@ ul.nav-list li a {
     margin-left: 35px;
   }
 }
+////////// BANNER  ///////////
 .banner {
   height: 100%;
   width: 100%;
@@ -480,6 +482,21 @@ a{
   &:hover {
     fill: $sunset-orange;
     transition: all 700ms;
+  }
+}
+////////////////////////////////
+///////  NAVIGATION    ////////
+//////  FOR ALL PAGES ////////
+/////////////////////////////
+#wrap {
+  overflow: auto;
+  position: relative;
+}
+.nav-wrap {
+  .nav-fix & {
+    background: #eee;
+    position: fixed;
+    top: 10px;
   }
 }
 /////////////////////////////
