@@ -1,4 +1,4 @@
-$(function () {
+$(function() {
 
   $('.slide').hide();
   $('.current').show();
