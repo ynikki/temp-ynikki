@@ -22,15 +22,15 @@ app.get('/', function(req, res) {
 });
 
 app.get('/hacc', function(req, res) {
-  res.render('hacc');
+  res.render('hacc', {page: 'HACC 2016'});
 });
 
 app.get('/stylesforhue', function(req, res) {
-  res.render('stylesforhue');
+  res.render('stylesforhue', {page: 'Styles For Hue'});
 });
 
 app.get('/nko', function(req, res) {
-  res.render('nko');
+  res.render('nko', {page: 'Node Knockout'});
 });
 
 app.use('/404', function (req, res) {
