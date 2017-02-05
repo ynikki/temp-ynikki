@@ -510,27 +510,53 @@ a{
 
 ////////   PHOTO GALLERY   /////////
 #layout-images {
+  width: 100%;
   height: 50vh;
+}
+.layout {
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
+  align-content: center;
   h1 {
-    display: flex;
+    font-size: 2rem;
   }
 }
-.gallery-images {
-  float: left;
-  width: 48%;
+#photo-gallery {
+  position: relative;
+  display: block;
+  width: 500px;
+  height: 50px;
+  margin: auto;
+  z-index: 2;
 }
-.image img {
-  margin: 10px;
-  width: 150px;
-  box-sizing: border-box;
+.gallery-wrapper {
+  width: 500px;
+  height: 300px;
+  padding-bottom: 10px;
+}
+.gallery-images {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 500px;
+  .image {
+    position: absolute;
+    top: 0;
+  }
+  img {
+    width: 500px;
+  }
 }
 .thumbs {
   img {
+    width: 150px;
     vertical-align: middle;
+    margin: 10px;
     box-sizing: border-box;
+
+    &:last-child {
+      margin-right: 0px;
+    }
   }
 }
