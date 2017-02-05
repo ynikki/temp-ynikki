@@ -158,7 +158,9 @@ ul.nav-list li a {
   background: rgba(216, 216, 216, 0.93);
   opacity: 1;
 }
-
+///////////////////////////////////////
+/////////////  HOME     //////////////
+/////////////////////////////////////
 #home, #work, #about {
   margin-bottom: 10px;
   padding: 3em 3em 2em 3em;
@@ -179,6 +181,9 @@ ul.nav-list li a {
   height: 150px;
   width: 150px;
 }
+/////////////////////////////////////
+////////////   WORK   //////////////
+///////////////////////////////////
 #work {
   height: 80vh;
   display: flex;
@@ -186,6 +191,8 @@ ul.nav-list li a {
   align-items: center;
   flex-direction: column;
 }
+/////////   NAV-ICONS    /////////
+////////  FOR THE WORK  /////////
 .icon-list {
   display: flex;
   justify-content: center;
@@ -238,6 +245,7 @@ ul.nav-list li a {
     align-items: center;
   }
 }
+///////  ART FOR THE COMPUTER   ////////
 .computerArt {
   display: flex;
   justify-content: center;
@@ -264,6 +272,31 @@ ul.nav-list li a {
   border-radius: 10px;
   background: $davys-grey;
 }
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin trapezoid($width, $color) {
+  width: $width;
+  height: 0;
+  border-right: $width / 4.5 solid transparent;
+  border-bottom: $width solid $color;
+  border-left: $width / 4.5 solid transparent;
+  box-sizing: content-box;
+}
+.stand {
+  @include trapezoid(65px, $platinum);
+}
+.foot {
+  height: 5px;
+  width: 130px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px 10px 0 0;
+  background: $platinum;
+}
+/////////   SLIDER   //////////
 #slider {
   position: relative;
   width: 500px;
@@ -329,6 +362,7 @@ ul.nav-list li a {
   top: 0;
   left: 0;
 }
+////////// CAPTION FOR THE SLIDER  /////////
 .slider-wrapper .caption {
   position: absolute;
   bottom: 0;
@@ -344,6 +378,7 @@ ul.nav-list li a {
   transform: translateY(100%);
   opacity: 0;
 }
+///////// FOR THE ARROWS OF THE SLIDER  /////////
 a.prev, a.next {
   position: absolute;
   top: 40%;
@@ -371,30 +406,6 @@ a{
     color: $davys-grey;
   }
 }
-.bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@mixin trapezoid($width, $color) {
-  width: $width;
-  height: 0;
-  border-right: $width / 4.5 solid transparent;
-  border-bottom: $width solid $color;
-  border-left: $width / 4.5 solid transparent;
-  box-sizing: content-box;
-}
-.stand {
-  @include trapezoid(65px, $platinum);
-}
-.foot {
-  height: 5px;
-  width: 130px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 10px 10px 0 0;
-  background: $platinum;
-}
 .information {
   border: solid 2px;
   width: 400px;
@@ -406,6 +417,7 @@ a{
 .active {
   transition: all 0.2s;
 }
+////////   DESCRIPTION FOR THE WORK   //////
 #descriptions {
   height: 7em;
   width: 100%;
@@ -429,12 +441,28 @@ a{
   position: absolute;
   max-width: 100%;
 }
+///////////////////////////////////////////
+///////// ABOUT FOR THE INDEX PAGE ///////
+/////////////////////////////////////////
 #about {
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.content {
+  width: 25vw;
+  line-height: 2rem;
+  text-align: center;
+}
+//////////   LOGOS    //////////
+.logos {
+  list-style-type: none;
+  text-align: center;
+  li {
+    display: inline-block;
+  }
 }
 #github-logo {
   height: 80px;
@@ -445,11 +473,6 @@ a{
     transition: all 700ms;
   }
 }
-.content {
-  width: 25vw;
-  line-height: 2rem;
-  text-align: center;
-}
 #linkedin-logo {
   width: 80px;
   height: 80px;
@@ -459,10 +482,11 @@ a{
     transition: all 700ms;
   }
 }
-.logos {
-  list-style-type: none;
-  text-align: center;
-  li {
-    display: inline-block;
-  }
+/////////////////////////////
+////// HACC 2016 PAGE //////
+///////////////////////////
+.hacc-photo {
+  background: url('/images/hacc/sunset.jpg') no-repeat center;
+  background-size: cover;
+  height: 400px;
 }
