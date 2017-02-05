@@ -1,11 +1,11 @@
 $(function() {
-  var wrap = $('#wrap');
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
 
-  wrap.on("scroll", function(e) {
-    if(this.scrollTop > 147) {
-      wrap.addClass("wrap-fix");
+    if(scroll >= 200) {
+      $('.banner-photo').addClass("nav-fix");
     } else {
-      wrap.removeClass("wrap-fix");
+      $('.banner-photo').removeClass("nav-fix");
     }
   });
 
