@@ -489,36 +489,74 @@ a{
 //////  FOR ALL PAGES ////////
 /////////////////////////////
 #nav-wrap {
-  overflow: auto;
-  position: relative;
-  &.nav-fix {
-    background: #eee;
-    position: fixed;
-    overflow: scroll;
-    background: rgba(216, 216, 216, 0.94);
-    top: 10px;
-    &.banner-photo {
-      opacity: 0;
-      transform: translateY(-75px);
-    }
-  }
-}
-#nav-wrap {
+  overflow: hidden;
+  display: block;
   width: 100%;
   height: 150px;
-  position: fixed;
 }
 #wrap nav {
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
   ul {
     display: inline-block;
     list-style-type: none;
-   float: right;
   }
   li {
     display: inline-block;
     margin: 10px;
     padding: 5px;
   }
+}
+#banner-photo {
+  top: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+  z-index: 999;
+  height: 400px;
+  &.is-open {
+    max-height: 100%;
+    position: fixed;
+    top: 0;
+    overflow: scroll;
+    background: rgba(216, 216, 216, 0.94);
+    opacity: 1;
+  }
+}
+#banner-photo header nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/////////////////////////////////
+/////////   CENTERING   ////////
+////////   NAVIGATION  ////////
+//////////////////////////////
+#nav-center {
+  text-align: center;
+  display: inline-block;
+  list-style-type: none;
+  position: relative;
+  top: 0;
+  &.sticky-header {
+    background: rgba(216, 216, 216, 0.94);
+    width: 100%;
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+}
+#nav-center nav a {
+  position: fixed;
+  display: inline-block;
+}
+#nav-center li {
+  display: inline-block;
+}
+#nav-center a {
+  display: inline-block;
 }
 /////////////////////////////
 ////// HACC 2016 PAGE //////
