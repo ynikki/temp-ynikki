@@ -1,11 +1,14 @@
 $(function() {
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
 
-    if(scroll >= 200) {
-      $('.banner-photo').addClass("nav-fix");
+  var $nav = $('#nav-center');
+  var posTop = $nav.position().top;
+
+  $(window).scroll(function() {
+    var y = $(this).scrollTop();
+    if( y > posTop) {
+      $nav.addClass('sticky-header');
     } else {
-      $('.banner-photo').removeClass("nav-fix");
+      $nav.removeClass('sticky-header');
     }
   });
 
