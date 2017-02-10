@@ -68,7 +68,7 @@ nav {
     width: 100%;
   }
   a {
-    color: #000;
+    // color: #000;
     font-size: 2.5rem;
     text-transform: uppercase;
     @media only screen and (min-width: 766px) {
@@ -261,6 +261,7 @@ ul.nav-list li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px;
 }
 .computer {
   display: flex;
@@ -432,7 +433,7 @@ a{
 #descriptions {
   height: 7em;
   width: 300px;
-  margin: 20px;
+  margin: 30px;
   padding: 10px;
   background-color: #FFF;
   position: relative;
@@ -573,29 +574,59 @@ a{
   display: inline-block;
 }
 .center-active {
-  border: 2px solid $sunset-orange;
-  border-radius: 30px;
+  border-bottom: 3px solid $sunset-orange;
+}
+a.center-active {
+  color: $sunset-orange;
 }
 /////////////////////////////
 ////// HACC 2016 PAGE //////
 ///////////////////////////
+.page-wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.5% 5%
+}
 .hacc-photo {
   background: url('/images/hacc/diamondhead.jpg') no-repeat center 50%;
   background-size: cover;
   height: 400px;
 }
+#intro {
+  margin-top: 200px;
+  height: 70vh;
+}
 .hacc-intro {
   margin: 20px;
   line-height: 1.5rem;
+  display: flex;
   h1 {
     font-size: 2rem;
     line-height: 2;
   }
 }
+.group-photo img {
+  width: 450px;
+  box-shadow: 0px 0px 5px #444444;
+}
+.intro-topic {
+  display: block;
+  margin-left: 50px;
+  height: 30em;
+}
+.group-intro {
+  margin-top: 40px;
+  height: 70vh;
+  display: flex;
+}
+iframe {
+  box-shadow: 0px 0px 5px #444444;
+  margin-left: 40px;
+}
 ////////   PHOTO GALLERY   /////////
 #layout-images {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
 }
 .layout {
   display: flex;
@@ -607,46 +638,120 @@ a{
     letter-spacing: 0.5rem;
   }
 }
-#photo-gallery {
-  position: relative;
-  display: block;
-  width: 550px;
-  height: 50px;
-  margin: auto;
-  z-index: 2;
-}
-.gallery-wrapper {
-  width: 550px;
-  height: 300px;
-  margin: 5px;
-  padding-bottom: 10px;
-}
 .gallery-images {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  width: 500px;
-  .image {
-    position: absolute;
-    top: 0;
-  }
   img {
-    width: 500px;
+    width: 400px;
+    box-shadow: 0px 0px 5px #6b6b6b;
   }
 }
-.current img {
+#lightbox {
+  margin: 10px auto;
+  width: 900px;
+  // border-bottom: 1px solid #ccc;
+}
+#lightbox ul {
+  overflow: hidden;
+}
+#lightbox h1 {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0;
+  color: #FFF;
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 2px solid rgba(255, 255, 255, 0.65);
+  border-right: 2px solid rgba(255, 255, 255, 0.65);
+}
+#lightbox ul li {
+  float: left;
+  padding: 10px;
+  background: #FFF;
+  margin: 0 20px 20px 0;
+  list-style-type: none;
+  position: relative;
   cursor: pointer;
 }
-.thumbs {
-  img {
-    width: 150px;
-    vertical-align: middle;
-    margin: 10px;
-    box-sizing: border-box;
-    cursor: pointer;
+#lightbox ul li:nth-child(even) {
+  margin-right: 0;
+}
+#lightbox ul li img {
+  display: block;
+}
+#lightbox .image-title {
+  width: 250px;
+  height: 175px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: table;
+  opacity: 0;
+  transition: all 0.5s;
+}
+#lightbox .title {
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  transform: scale(0.2);
+  transition: all 0.25s;
+}
+.lb_backdrop {
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.lb_canvas {
+  // background: #FFF;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 20px 5px #000000;
+  padding: 10px;
+}
+.lb_controls {
+  width: 400px;
+  background: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  bottom: 10px;
+  color: #FFF;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.lb_controls span {
+  line-height: 30px;
+  height: 30px;
+}
+.lb_controls span.interactive {
+  opacity: 0.25;
+}
+.lb_previous, .lb_next {
+  position: absolute;
+  top: 0;
+  padding: 5px 12px;
+  background: #000000;
+  cursor: pointer;
+}
+.lb_previous {
+  left: 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.lb_next {
+  right: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
 
-    &:last-child {
-      margin-right: 0px;
-    }
-  }
+.lb_title {
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  padding: 5px 0;
 }
