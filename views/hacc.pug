@@ -1,29 +1,48 @@
 doctype html
 include includes/head.pug
 body
+  #wrap
+    header#banner-photo.hacc-photo
+      h1 HACC 2016
+    include includes/centernav.pug
   .page-wrap
-    #wrap
-      header#banner-photo.hacc-photo
-        h1 HACC 2016
-      include includes/centernav.pug
     main#intro.hacc-intro
-      h1 Hawaii Annual Code Challenge
-      p Sweet chupa chups pudding candy. Croissant lollipop dragée wafer. Chocolate cheesecake brownie. Gingerbread bonbon caramels sugar plum macaroon cake dragée tootsie roll. Bear claw gummi bears gummies carrot cake cake donut. Jelly beans pie sweet wafer bonbon cotton candy. Danish dessert lemon drops pastry sesame snaps powder tiramisu chupa chups. Croissant pastry candy marshmallow. Cheesecake cookie carrot cake dessert. Jelly beans brownie cake. Candy canes liquorice bonbon bear claw powder toffee biscuit donut cake. Powder bonbon soufflé lollipop powder pie. Chocolate carrot cake oat cake jelly beans donut dessert candy marshmallow sugar plum. Jelly-o chocolate bar chocolate bar macaroon.
+      .group-photo
+        img(src="/images/hacc/hacc_2016.jpg")
+      .intro-topic
+        h1 Hawaii Annual Code Challenge
+        p Sweet chupa chups pudding candy. Croissant lollipop dragée wafer. Chocolate cheesecake brownie. Gingerbread bonbon caramels sugar plum macaroon cake dragée tootsie roll. Bear claw gummi bears gummies carrot cake cake donut. Jelly beans pie sweet wafer bonbon cotton candy. Danish dessert lemon drops pastry sesame snaps powder tiramisu chupa chups. Croissant pastry candy marshmallow. Cheesecake cookie carrot cake dessert. Jelly beans brownie cake. Candy canes liquorice bonbon bear claw powder toffee biscuit donut cake. Powder bonbon soufflé lollipop powder pie. Chocolate carrot cake oat cake jelly beans donut dessert candy marshmallow sugar plum. Jelly-o chocolate bar chocolate bar macaroon.
+    section.group-intro
+      .intro-topic
+        h1 Our Team
+        p Liquorice cookie jelly-o. Cotton candy halvah biscuit cookie dessert. Bear claw jelly beans muffin cookie dessert tootsie roll donut. Toffee donut chocolate cake pudding marzipan lollipop macaroon cookie carrot cake. Liquorice powder fruitcake. Cupcake sugar plum jelly-o icing cake gingerbread powder. Croissant croissant gummi bears cookie jelly-o jelly bear claw apple pie. Apple pie dessert caramels chocolate bar oat cake pudding chocolate cake jujubes cookie. Oat cake candy canes sesame snaps. Lollipop marshmallow liquorice pudding dessert jelly gummies tootsie roll.
+      .site-video
+        iframe(width="560" height="315" src="https://www.youtube.com/embed/LWy0XZ_QjNA" frameborder="0" allowfullscreen)
     section#layout-images
       .layout
         h1 Layout Design
       #photo-gallery
         .gallery-wrapper
-          .gallery-images
-            .image.current
-              img(src="/images/hacc/sketches/index_page.jpg")
-            .image
-              img(src="/images/hacc/sketches/search_page.jpg")
-            .image
-              img(src="/images/hacc/sketches/product_page.jpg")
-            .image
-              img(src="/images/hacc/sketches/business_page.jpg")
-            .image
-              img(src="/images/hacc/sketches/about.jpg")
-        .thumbs
+          #lightbox.gallery-images
+            ul
+              li
+                img(src="/images/hacc/sketches/index_page.jpg" data-large="/images/hacc/sketches/index_page.jpg")
+                .image-title
+                  h5.title Index Page
+              li
+                img(src="/images/hacc/sketches/search_page.jpg" data-large="/images/hacc/sketches/search_page.jpg")
+                .image-title
+                  h5.title Search Page
+              li
+                img(src="/images/hacc/sketches/product_page.jpg" data-large="/images/hacc/sketches/product_page.jpg")
+                .image-title
+                  h5.title Product Page
+              li
+                img(src="/images/hacc/sketches/business_page.jpg" data-large="/images/hacc/sketches/business_page.jpg")
+                .image-title
+                  h5.title Business Page
+              li
+                img(src="/images/hacc/sketches/about.jpg" data-large="/images/hacc/sketches/about.jpg")
+                .image-title
+                  h5.title About Page
   include includes/sourcefiles.pug
