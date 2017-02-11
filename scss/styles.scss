@@ -327,7 +327,7 @@ ul.nav-list li a {
   padding: 0;
   position: relative;
   // display: inline-block;
-  height: 300px;
+  height: 280px;
   list-style: none;
 }
 #slider ul li {
@@ -381,6 +381,7 @@ ul.nav-list li a {
   left: 0;
   background: rgba(0,0,0,0.65);
   width: 100%;
+  height: 40px;
   padding: 10px;
   color: #FFF;
   display: table;
@@ -393,7 +394,7 @@ ul.nav-list li a {
 ///////// FOR THE ARROWS OF THE SLIDER  /////////
 a.prev, a.next {
   position: absolute;
-  top: 40%;
+  top: 45%;
   z-index: 999;
   display: block;
   padding: 4% 3%;
@@ -583,13 +584,28 @@ a.center-active {
 ////// HACC 2016 PAGE //////
 ///////////////////////////
 .page-wrap {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 1.5% 5%
+  padding: 5% 5%;
+}
+#wrap {
+  position: relative;
+}
+.site-text {
+  font-size: 6rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #FFF;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  top: 50%;
 }
 .hacc-photo {
-  background: url('/images/hacc/diamondhead.jpg') no-repeat center 50%;
-  background-size: cover;
+  // background: url('/images/hacc/diamondhead.jpg') no-repeat center 50%;
+  // background-size: cover;
+  background: linear-gradient(180deg, #52b9b3, #6adba2);
+  position: relative;
   height: 400px;
 }
 #intro {
@@ -597,7 +613,6 @@ a.center-active {
   height: 70vh;
 }
 .hacc-intro {
-  margin: 20px;
   line-height: 1.5rem;
   display: flex;
   h1 {
@@ -619,36 +634,57 @@ a.center-active {
   height: 70vh;
   display: flex;
 }
+.group-topic {
+  display: block;
+  margin-right: 50px;
+  height: 30em;
+}
 iframe {
   box-shadow: 0px 0px 5px #444444;
   margin-left: 40px;
 }
 ////////   PHOTO GALLERY   /////////
 #layout-images {
-  width: 100%;
-  height: 70vh;
-}
-.layout {
+  // width: 100%;
+  // height: 70vh;
   display: flex;
   justify-content: center;
   align-content: center;
+  flex-direction: column;
+}
+.layout {
+  // display: flex;
+  // justify-content: center;
+  // align-content: center;
   margin-bottom: 15px;
   h1 {
     font-size: 2rem;
     letter-spacing: 0.5rem;
+    text-align: center;
   }
 }
 .gallery-images {
   img {
-    width: 400px;
+    width: 450px;
     box-shadow: 0px 0px 5px #6b6b6b;
   }
 }
 #lightbox {
-  margin: 10px auto;
-  width: 900px;
-  // border-bottom: 1px solid #ccc;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
+// #lightbox {
+  // margin: 0 auto;
+  // width: 1020px;
+  // display: flex;
+  // justify-content: center;
+  // align-content: center;
+//   display: inline-block;
+//   position: relative;
+// }
 #lightbox ul {
   overflow: hidden;
 }
@@ -666,13 +702,17 @@ iframe {
   float: left;
   padding: 10px;
   background: #FFF;
-  margin: 0 20px 20px 0;
+  // margin: 0 30px 10px 0;
+  margin-top: 30px;
   list-style-type: none;
   position: relative;
   cursor: pointer;
 }
 #lightbox ul li:nth-child(even) {
-  margin-right: 0;
+  margin-left: 10%;
+}
+#lightbox ul li:nth-child(odd) {
+  margin-right: 10%;
 }
 #lightbox ul li img {
   display: block;
