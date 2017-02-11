@@ -31,6 +31,9 @@ html {
     overflow: hidden;
   }
 }
+strong {
+  font-weight: 400;
+}
 h1, h2 {
   font-weight: 700;
   font-size: 1.8rem;
@@ -163,7 +166,9 @@ ul.nav-list li a {
   width: 100%;
   font-size: 5rem;
   line-height: 1.4;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.6rem;
+  text-transform: none;
+  color: #FFF;
 }
 .is-sticky {
   position: fixed;
@@ -198,7 +203,6 @@ ul.nav-list li a {
 ////////////   WORK   //////////////
 ///////////////////////////////////
 #work {
-  height: 80vh;
   justify-content: center;
   align-content: center;
 }
@@ -219,7 +223,7 @@ ul.nav-list li a {
 .nav-icons {
   width: 110px;
   display: block;
-  margin: 1em;
+  margin: 0 3% 0 2%;
   line-height: 2;
 
   &:hover {
@@ -235,39 +239,35 @@ ul.nav-list li a {
   content: "";
 }
 .hacc-icon {
-  background: url('/images/hacc_2016.png') no-repeat center;
-  background-size: contain;
-  height: 60px;
+  // background: url('/svg/hacc.svg') no-repeat center;
+  // background-size: contain;
+  svg {
+    height: 60px;
+    
+  }
 }
 .stylesforhue-icon {
-  background: url('/images/stylesforhue_ico.png') no-repeat center;
+  background: url('/svg/stylesforhue.svg') no-repeat center;
   background-size: cover;
   height: 60px;
+}
+svg:hover {
+  fill: $amazonite;
 }
 .work-info {
   display: block;
   justify-content: center;
   align-items: center;
   line-height: 2 ;
-
-  h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  text-align: center;
+  margin-bottom: 2%;
 }
 ///////  ART FOR THE COMPUTER   ////////
 .computerArt {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  margin: 10px 40px 0 0;
 }
 .computer {
   display: flex;
@@ -318,8 +318,6 @@ ul.nav-list li a {
 #slider {
   position: relative;
   width: 500px;
-  // height: 280px;
-  // margin: 20px auto 0 auto;
   border: solid 2px $platinum;
 }
 .arrow {
@@ -332,12 +330,10 @@ ul.nav-list li a {
   margin: 0;
   padding: 0;
   position: relative;
-  // display: inline-block;
   height: 280px;
   list-style: none;
 }
 #slider ul li {
-  // display: block;
   width: 500px;
   height: 300px;
   text-align: center;
@@ -376,7 +372,6 @@ ul.nav-list li a {
 .slider-wrapper img {
   position: absolute;
   max-width: 100%;
-  // height: auto;
   top: 0;
   left: 0;
 }
@@ -437,7 +432,7 @@ a{
 #descriptions {
   height: 7em;
   width: 300px;
-  margin: 30px;
+  margin: 10px 0 0 40px;
   padding: 10px;
   background-color: #FFF;
   position: relative;
@@ -470,7 +465,7 @@ a{
   flex-direction: column;
 }
 .content {
-  width: 25vw;
+  width: 40vw;
   line-height: 2rem;
   text-align: center;
 }
@@ -549,12 +544,14 @@ a{
 /////////   CENTERING   ////////
 ////////   NAVIGATION  ////////
 //////////////////////////////
+.hacc-wrap #nav-center {
+  background: #6adba2;
+}
 #nav-center {
   text-align: center;
   display: inline-block;
   list-style-type: none;
   position: relative;
-  background: #6adba2;
   top: 0;
   &.sticky-header {
     background: rgba(216, 216, 216, 0.94);
