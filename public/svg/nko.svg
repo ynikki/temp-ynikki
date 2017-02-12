@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+  <!ENTITY st0 "fill:none;">
+  <!ENTITY st1 "fill:#898989;">
+  <!ENTITY st2 "font-family:'04b03';">
+  <!ENTITY st3 "font-size:11px;">
+  <!ENTITY st4 "fill:#C12739;">
+  <!ENTITY st5 "fill:#FFFFFF;">
+]>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 62 50" style="enable-background:new 0 0 62 50;" xml:space="preserve">
+<font horiz-adv-x="1000">
+<!-- 1999?2003 / yuji oshimo?o / 04@dsg4.com / www.04.jp.org -->
+<!-- Copyright: Copyright 2017 Adobe System Incorporated. All rights reserved. -->
+<font-face font-family="04b03" units-per-em="1000" underline-position="-133" underline-thickness="20"/>
+<missing-glyph horiz-adv-x="500" d="M63,0l0,750l375,0l0,-750M125,63l250,0l0,625l-250,0z"/>
+<glyph unicode="." horiz-adv-x="250" d="M0,0l125,0l0,125l-125,0z"/>
+<glyph unicode="d" horiz-adv-x="625" d="M125,126l250,0l0,248l-250,0M125,375l0,125l250,0l0,125l125,0l0,-625l-375,0l0,125l-125,0l0,250z"/>
+<glyph unicode="e" horiz-adv-x="625" d="M250,251l0,123l-125,0l0,-123M125,0l0,125l-125,0l0,250l125,0l0,125l250,0l0,-125l125,0l0,-125l-250,0l0,-125l125,0l0,-125z"/>
+<glyph unicode="j" horiz-adv-x="375" d="M250,625l-125,0l0,-125l125,0M250,375l-125,0l0,-500l125,0M125,-125l-125,0l0,-125l125,0z"/>
+<glyph unicode="k" horiz-adv-x="625" d="M375,375l-125,0l0,-125l-125,0l0,375l-125,0l0,-625l125,0l0,125l250,0M500,500l-125,0l0,-125l125,0M500,0l0,125l-125,0l0,-125z"/>
+<glyph unicode="n" horiz-adv-x="625" d="M375,0l125,0l0,375l-125,0M125,375l250,0l0,125l-375,0l0,-500l125,0z"/>
+<glyph unicode="o" horiz-adv-x="625" d="M375,126l0,248l-250,0l0,-248M125,125l-125,0l0,250l125,0l0,125l250,0l0,-125l125,0l0,-250l-125,0l0,-125l-250,0z"/>
+<glyph unicode="s" horiz-adv-x="625" d="M125,500l0,-125l-125,0l0,-125l250,0l0,125l250,0l0,125M0,125l0,-125l375,0l0,125l125,0l0,125l-250,0l0,-125z"/>
+</font>
+
+  <rect x="2" y="20.2" style="&st0;" width="42.2" height="10.8"/>
+<text transform="matrix(1 0 0 1 1.9937 27.027)" style="&st2; &st3;">node.js</text>
+<rect x="43.3" y="18.2" width="16.4" height="11.6"/>
+<rect x="45.6" y="19.8" style="&st0;" width="15.5" height="8.4"/>
+<text transform="matrix(1 0 0 1 45.5837 26.6852)" style="&st5; &st2; &st3;">ko</text>
+</svg>
