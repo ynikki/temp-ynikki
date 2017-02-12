@@ -168,6 +168,7 @@ ul.nav-list li a {
   line-height: 1.4;
   letter-spacing: 0.6rem;
   text-transform: none;
+  font-weight: 400;
   color: #FFF;
 }
 .is-sticky {
@@ -221,10 +222,12 @@ ul.nav-list li a {
   align-items: center;
 }
 .nav-icons {
-  width: 110px;
+  width: 125px;
   display: block;
   margin: 0 3% 0 2%;
-  line-height: 2;
+  line-height: 1.2;
+  text-align: center;
+  font-size: 1.2rem;
 
   &:hover {
     cursor: pointer;
@@ -238,21 +241,38 @@ ul.nav-list li a {
   left: calc(50% - 15px);
   content: "";
 }
-.hacc-icon {
-  // background: url('/svg/hacc.svg') no-repeat center;
-  // background-size: contain;
-  svg {
-    height: 60px;
-    
+.nav-link:hover {
+  color: $amazonite;
+}
+.hacc-icon svg {
+  width: 80px;
+  fill: #898989;
+  &:hover path {
+    fill: $amazonite;
   }
 }
-.stylesforhue-icon {
-  background: url('/svg/stylesforhue.svg') no-repeat center;
-  background-size: cover;
-  height: 60px;
+.stylesforhue-icon svg {
+  fill: #898989;
+  &:hover text {
+    fill: $amazonite;
+  }
 }
-svg:hover {
+.nko-icon svg {
+  fill: #898989;
+  &:hover text {
+    fill: $amazonite;
+  }
+  &:hover rect {
+    fill: $amazonite;
+  }
+}
+#hacc-logo:hover path {
   fill: $amazonite;
+}
+.stylesforhue-icon {
+  // background: url('/svg/stylesforhue.svg') no-repeat center;
+  // background-size: cover;
+  // height: 60px;
 }
 .work-info {
   display: block;
