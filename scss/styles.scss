@@ -244,6 +244,9 @@ ul.nav-list li a {
 .nav-link:hover {
   color: $amazonite;
 }
+.hacc-icon {
+  margin-bottom: 12%;
+}
 .hacc-icon svg {
   width: 80px;
   fill: #898989;
@@ -256,6 +259,9 @@ ul.nav-list li a {
   &:hover text {
     fill: $amazonite;
   }
+}
+.nko-icon {
+  margin-bottom: -25px;
 }
 .nko-icon svg {
   fill: #898989;
