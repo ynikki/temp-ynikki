@@ -275,11 +275,6 @@ ul.nav-list li a {
 #hacc-logo:hover path {
   fill: $amazonite;
 }
-.stylesforhue-icon {
-  // background: url('/svg/stylesforhue.svg') no-repeat center;
-  // background-size: cover;
-  // height: 60px;
-}
 .work-info {
   display: block;
   justify-content: center;
@@ -595,6 +590,9 @@ a{
   &.sticky-header .center-active {
     color: $sunset-orange;
   }
+  &.sticky-header a:hover {
+    color: $sunset-orange;
+  }
 }
 .nav-center-item a{
   color: #FFF;
@@ -612,6 +610,9 @@ a{
 }
 .center-active {
   border-bottom: 3px solid $sunset-orange;
+}
+.center-active nav a:hover {
+  color: $amazonite;
 }
 /////////////////////////////
 ////// HACC 2016 PAGE //////
@@ -658,7 +659,6 @@ a{
 }
 .group-intro {
   margin: 10% 0 15% 0;
-  // height: 80vh;
   display: flex;
 }
 .group-topic {
@@ -671,61 +671,55 @@ iframe {
 }
 ////////   PHOTO GALLERY   /////////
 #layout-images {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
   h1 {
     text-transform: uppercase;
+  }
+  @includes medium {
+    // display: inline-block;
+    // flex: 0 1 auto;
   }
 }
 .layout {
   text-align: center;
   margin-bottom: 5%;
 }
-.gallery-images {
-  img {
-    width: 450px;
-    box-shadow: 0px 0px 5px #6b6b6b;
-  }
-}
 #lightbox {
-  position: relative;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-#lightbox ul {
-  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  & ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+  & li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: 50%;
+    background: #FFF;
+    cursor: pointer;
+  }
+  & img {
+    display: inline-block;
+    width: 100%;
+    box-shadow: 0px 0px 5px #6b6b6b;
+
+  }
 }
 #lightbox h1 {
   text-transform: uppercase;
   text-align: center;
-  padding: 10px 0;
-  margin: 20px 0;
+  // padding: 10px 0;
+  // margin: 20px 0;
   color: #FFF;
   background: rgba(255, 255, 255, 0.1);
   border-left: 2px solid rgba(255, 255, 255, 0.65);
   border-right: 2px solid rgba(255, 255, 255, 0.65);
-}
-#lightbox ul li {
-  float: left;
-  padding: 10px;
-  background: #FFF;
-  margin-top: 30px;
-  list-style-type: none;
-  position: relative;
-  cursor: pointer;
-}
-#lightbox ul li:nth-child(even) {
-  margin-left: 10%;
-}
-#lightbox ul li:nth-child(odd) {
-  margin-right: 10%;
-}
-#lightbox ul li img {
-  display: block;
 }
 #lightbox .image-title {
   width: 250px;
