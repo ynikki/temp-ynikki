@@ -251,13 +251,15 @@ ul.nav-list li a {
   width: 80px;
   fill: #898989;
   &:hover path {
-    fill: $amazonite;
+    fill: $light-blue;
+    transition: all 700ms;
   }
 }
 .stylesforhue-icon svg {
   fill: #898989;
   &:hover text {
-    fill: $amazonite;
+    fill: $light-blue;
+    transition: all 700ms;
   }
 }
 .nko-icon {
@@ -266,14 +268,13 @@ ul.nav-list li a {
 .nko-icon svg {
   fill: #898989;
   &:hover text {
-    fill: $amazonite;
+    fill: $light-blue;
+    transition: all 700ms;
   }
   &:hover rect {
-    fill: $amazonite;
+    fill: $light-blue;
+    transition: all 700ms;
   }
-}
-#hacc-logo:hover path {
-  fill: $amazonite;
 }
 .work-info {
   display: block;
@@ -306,7 +307,6 @@ ul.nav-list li a {
   align-items: center;
   position: relative;
   overflow: hidden;
-  // display: block;
   z-index: 2;
   border-radius: 10px;
   background: $davys-grey;
@@ -429,7 +429,7 @@ a.prev, a.next {
 a.prev:hover, a.next:hover {
   opacity: 1;
   transition: all 0.2s ease;
-  color: $amazonite;
+  color: $light-blue;
   transition: all 700ms;
 }
 a.next {
