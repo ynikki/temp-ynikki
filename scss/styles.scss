@@ -58,7 +58,7 @@ nav a {
   line-height: 1.8;
 }
 nav a:hover {
-  color: $sunset-orange;
+  color: $queen-blue;
 }
 nav a:after {
   position: absolute;
@@ -67,7 +67,7 @@ nav a:after {
   display: block;
   width: 100%;
   height: 3px;
-  background-color: $sunset-orange;
+  background-color: $queen-blue;
   content: "";
   transform: scale(0);
   transition: transform .3s cubic-bezier(0.11, 0.7, 0, 1);
@@ -136,7 +136,7 @@ ul.nav-list li a {
   float: right;
 
   .banner & {
-    color: #FFF;
+    color: $white;
     padding: 0;
     max-width: 1040px;
     margin: 0 auto;
@@ -169,7 +169,7 @@ ul.nav-list li a {
   letter-spacing: 0.6rem;
   text-transform: none;
   font-weight: 400;
-  color: #FFF;
+  color: $white;
 }
 .is-sticky {
   position: fixed;
@@ -342,7 +342,7 @@ ul.nav-list li a {
   border: solid 2px $platinum;
 }
 .arrow {
-  border: solid 2px #FFF;
+  border: solid 2px $white;
 }
 .active {
   transition: all 0.2s;
@@ -405,7 +405,7 @@ ul.nav-list li a {
   width: 100%;
   height: 40px;
   padding: 10px;
-  color: #FFF;
+  color: $white;
   display: table;
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
@@ -451,25 +451,25 @@ a{
 }
 ////////   DESCRIPTION FOR THE WORK   //////
 #descriptions {
-  height: 7em;
   width: 300px;
   margin: 10px 0 0 40px;
   padding: 10px;
-  background-color: #FFF;
+  background-color: $white;
   position: relative;
   line-height: 1.2;
-  // overflow: hidden;
+  @include small {
+    display: block;
+  }
 }
 #descriptions .now {
   display: block;
+  background-color: $white;
 }
 .description {
   position: absolute;
-  background-color: #FFF;
+  background-color: $white;
   display: none;
-}
-.description:first-child {
-  display: block;
+  overflow: hidden;
 }
 .description div {
   position: absolute;
@@ -503,7 +503,7 @@ a{
   width: 80px;
   fill: $arsenic;
   &:hover {
-    fill: $sunset-orange;
+    fill: $light-blue;
     transition: all 700ms;
   }
 }
@@ -512,7 +512,7 @@ a{
   height: 80px;
   fill: $arsenic;
   &:hover {
-    fill: $sunset-orange;
+    fill: $light-blue;
     transition: all 700ms;
   }
 }
@@ -588,14 +588,14 @@ a{
     color: #4C5454;
   }
   &.sticky-header .center-active {
-    color: $sunset-orange;
+    color: $queen-blue;
   }
   &.sticky-header a:hover {
-    color: $sunset-orange;
+    color: $queen-blue;
   }
 }
 .nav-center-item a{
-  color: #FFF;
+  color: $white;
 }
 #nav-center nav a {
   position: fixed;
@@ -609,10 +609,10 @@ a{
   display: inline-block;
 }
 .center-active {
-  border-bottom: 3px solid $sunset-orange;
+  border-bottom: 3px solid $queen-blue;
 }
 .center-active nav a:hover {
-  color: $amazonite;
+  color: $queen-blue;
 }
 /////////////////////////////
 ////// HACC 2016 PAGE //////
@@ -629,7 +629,7 @@ a{
   font-size: 6rem;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: #FFF;
+  color: $white;
   text-align: center;
   position: relative;
   margin: 0;
@@ -648,36 +648,70 @@ a{
 .hacc-intro {
   line-height: 1.5rem;
   display: flex;
+
+  @include medium {
+    display: inline-block;
+  }
 }
 .group-photo img {
   width: 450px;
   box-shadow: 0px 0px 5px #444444;
+
+  @include medium {
+    display: inline-block;
+    width: 100%;
+  }
 }
 .intro-topic {
   display: block;
   margin-left: 50px;
+
+  @include medium {
+    margin: 2em 0;
+    padding: 0;
+    width: 100%;
+  }
 }
 .group-intro {
   margin: 10% 0 15% 0;
   display: flex;
+
+  @include medium {
+    display: inline-block;
+    margin: 2em 0;
+  }
 }
 .group-topic {
   display: block;
   width: 50%;
   margin-right: 50px;
+
+  @include medium {
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+  }
+}
+.site-video {
+  @include medium {
+    display: inline-block;
+    margin: 2em 0;
+    width: 100%;
+  }
 }
 iframe {
   box-shadow: 0px 0px 5px #444444;
   margin-left: 40px;
+  @include medium {
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+  }
 }
 ////////   PHOTO GALLERY   /////////
 #layout-images {
   h1 {
     text-transform: uppercase;
-  }
-  @includes medium {
-    // display: inline-block;
-    // flex: 0 1 auto;
   }
 }
 .layout {
@@ -688,13 +722,16 @@ iframe {
   margin: 0;
   padding: 0;
   display: flex;
+  @include medium {
+    flex: 0 1 auto;
+  }
   & ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
+    flex-flow: wrap row;
   }
   & li {
     list-style: none;
@@ -702,20 +739,29 @@ iframe {
     margin: 0;
     display: inline-block;
     width: 50%;
-    background: #FFF;
+    background: $white;
     cursor: pointer;
+    @include medium {
+      display: inline-block;
+      width: 100%;
+    }
   }
   & img {
     display: inline-block;
     width: 100%;
     box-shadow: 0px 0px 5px #6b6b6b;
 
+    @include medium {
+      display: inline-block;
+      width: 100%;
+    }
+
   }
 }
 #lightbox h1 {
   text-transform: uppercase;
   text-align: center;
-  color: #FFF;
+  color: $white;
   background: rgba(255, 255, 255, 0.1);
   border-left: 2px solid rgba(255, 255, 255, 0.65);
   border-right: 2px solid rgba(255, 255, 255, 0.65);
@@ -732,7 +778,7 @@ iframe {
   transition: all 0.5s;
 }
 #lightbox .title {
-  color: #FFF;
+  color: $white;
   background: rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
   text-align: center;
@@ -763,7 +809,7 @@ iframe {
   background: rgba(0, 0, 0, 0.75);
   position: fixed;
   bottom: 10px;
-  color: #FFF;
+  color: $white;
   left: 0;
   right: 0;
   margin: 0 auto;
