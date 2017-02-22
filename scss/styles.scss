@@ -211,6 +211,9 @@ ul.nav-list li a {
   display: flex;
   justify-content: center;
   align-content: center;
+  @include medium {
+    display: block;
+  }
 }
 ///////////////////////////////////
 /////////   NAV-ICONS    /////////
@@ -290,6 +293,11 @@ ul.nav-list li a {
   justify-content: center;
   align-items: center;
   margin: 10px 40px 0 0;
+  @include medium {
+    display: inline-block;
+    width: 100%;
+    margin: 15px 0;
+  }
 }
 .computer {
   display: flex;
@@ -457,19 +465,28 @@ a{
   background-color: $white;
   position: relative;
   line-height: 1.2;
-  @include small {
-    display: block;
+  @include medium {
+    display: inline-block;
+    width: 100%;
+    margin: 15px 0;
+    padding: 0;
   }
 }
 #descriptions .now {
   display: block;
   background-color: $white;
+  // @include medium {
+  //   display: inline-block;
+  // }
 }
 .description {
   position: absolute;
   background-color: $white;
   display: none;
   overflow: hidden;
+  @include medium {
+    position: inherit;
+  }
 }
 .description div {
   position: absolute;
@@ -484,11 +501,19 @@ a{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @include medium {
+    height: 1005;
+    display: inline-block;
+  }
 }
 .content {
   width: 40vw;
   line-height: 2rem;
   text-align: center;
+
+  @include medium {
+    width: 100%;
+  }
 }
 //////////   LOGOS    //////////
 .logos {
@@ -676,7 +701,7 @@ a{
   margin-left: 50px;
 
   @include medium {
-    margin: 2em 0;
+    margin: 0;
     padding: 0;
     width: 100%;
 
@@ -686,7 +711,7 @@ a{
   }
 
   @include small {
-    margin: 2em 0;
+    margin: 0;
     padding: 0;
     width: 100%;
   }
@@ -768,6 +793,7 @@ iframe {
 #lightbox {
   margin: 0;
   padding: 0;
+  width: 100%;
   display: flex;
   @include medium {
     flex: 0 1 auto;
@@ -776,34 +802,35 @@ iframe {
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-flow: wrap row;
   }
   & li {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: inline-block;
-    width: 50%;
+    margin: 10px 0;
+    display: block;
+    width: 32%;
     background: $white;
     cursor: pointer;
 
     @include medium {
       display: inline-block;
       width: 100%;
-      padding: 0 2.2em;
+      padding: 0;
     }
 
     @include small {
       display: inline-block;
       width: 100%;
-      padding: 0 1.5em;
+      padding: 0;
     }
   }
 
   & img {
-    display: inline-block;
+    display: block;
     width: 100%;
     box-shadow: 0px 0px 5px #6b6b6b;
 
