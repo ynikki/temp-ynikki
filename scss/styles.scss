@@ -214,6 +214,9 @@ ul.nav-list li a {
   @include medium {
     display: block;
   }
+  @include small {
+    display: block;
+  }
 }
 ///////////////////////////////////
 /////////   NAV-ICONS    /////////
@@ -293,7 +296,14 @@ ul.nav-list li a {
   justify-content: center;
   align-items: center;
   margin: 10px 40px 0 0;
+
   @include medium {
+    display: inline-block;
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  @include small {
     display: inline-block;
     width: 100%;
     margin: 15px 0;
@@ -318,6 +328,11 @@ ul.nav-list li a {
   z-index: 2;
   border-radius: 10px;
   background: $davys-grey;
+
+  @include small {
+    width: 440px;
+    height: 280px;
+  }
 }
 .bottom {
   display: flex;
@@ -348,6 +363,10 @@ ul.nav-list li a {
   position: relative;
   width: 500px;
   border: solid 2px $platinum;
+
+  @include small {
+    width: 400px;
+  }
 }
 .arrow {
   border: solid 2px $white;
@@ -361,6 +380,10 @@ ul.nav-list li a {
   position: relative;
   height: 280px;
   list-style: none;
+
+  @include small {
+    height: 200px;
+  }
 }
 #slider ul li {
   width: 500px;
@@ -369,6 +392,11 @@ ul.nav-list li a {
   position: relative;
   &:hover {
     cursor: pointer;
+  }
+
+  @include small {
+    width: 400px;
+    height: 200px;
   }
 }
 .slide {
@@ -420,6 +448,10 @@ ul.nav-list li a {
   -o-transform: translateY(100%);
   transform: translateY(100%);
   opacity: 0;
+
+  @include small {
+    height: 20px;
+  }
 }
 ///////// FOR THE ARROWS OF THE SLIDER  /////////
 a.prev, a.next {
@@ -433,6 +465,10 @@ a.prev, a.next {
   text-decoration: none;
   opacity: 0.8;
   color: $davys-grey;
+
+  @include small {
+    display: none;
+  }
 }
 a.prev:hover, a.next:hover {
   opacity: 1;
@@ -471,6 +507,12 @@ a{
     margin: 15px 0;
     padding: 0;
   }
+  @include small {
+    display: inline-block;
+    width: 100%;
+    margin: 15px 0;
+    padding: 0;
+  }
 }
 #descriptions .now {
   display: block;
@@ -485,6 +527,9 @@ a{
   display: none;
   overflow: hidden;
   @include medium {
+    position: inherit;
+  }
+  @include small {
     position: inherit;
   }
 }
@@ -502,16 +547,24 @@ a{
   align-items: center;
   flex-direction: column;
   @include medium {
-    height: 1005;
+    height: 100%;
+    display: inline-block;
+  }
+
+  @include small {
+    height: 100%;
     display: inline-block;
   }
 }
 .content {
-  width: 40vw;
   line-height: 2rem;
   text-align: center;
 
   @include medium {
+    width: 100%;
+  }
+
+  @include small {
     width: 100%;
   }
 }
