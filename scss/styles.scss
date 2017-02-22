@@ -58,7 +58,7 @@ nav a {
   line-height: 1.8;
 }
 nav a:hover {
-  color: $queen-blue;
+  color: $rudy-pink;
 }
 nav a:after {
   position: absolute;
@@ -67,7 +67,7 @@ nav a:after {
   display: block;
   width: 100%;
   height: 3px;
-  background-color: $queen-blue;
+  background-color: $rudy-pink;
   content: "";
   transform: scale(0);
   transition: transform .3s cubic-bezier(0.11, 0.7, 0, 1);
@@ -588,10 +588,10 @@ a{
     color: #4C5454;
   }
   &.sticky-header .center-active {
-    color: $queen-blue;
+    color: $rudy-pink;
   }
   &.sticky-header a:hover {
-    color: $queen-blue;
+    color: $rudy-pink;
   }
 }
 .nav-center-item a{
@@ -609,10 +609,10 @@ a{
   display: inline-block;
 }
 .center-active {
-  border-bottom: 3px solid $queen-blue;
+  border-bottom: 3px solid $rudy-pink;
 }
 .center-active nav a:hover {
-  color: $queen-blue;
+  color: $rudy-pink;
 }
 /////////////////////////////
 ////// HACC 2016 PAGE //////
