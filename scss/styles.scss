@@ -58,7 +58,7 @@ nav a {
   line-height: 1.8;
 }
 nav a:hover {
-  color: $rudy-pink;
+  color: $sunset-orange;
 }
 nav a:after {
   position: absolute;
@@ -67,7 +67,7 @@ nav a:after {
   display: block;
   width: 100%;
   height: 3px;
-  background-color: $rudy-pink;
+  background-color: $sunset-orange;
   content: "";
   transform: scale(0);
   transition: transform .3s cubic-bezier(0.11, 0.7, 0, 1);
@@ -248,7 +248,7 @@ ul.nav-list li a {
   content: "";
 }
 .nav-link:hover {
-  color: $amazonite;
+  color: $sunset-orange;
 }
 .hacc-icon {
   margin-bottom: 12%;
@@ -257,14 +257,14 @@ ul.nav-list li a {
   width: 80px;
   fill: #898989;
   &:hover path {
-    fill: $light-blue;
+    fill: $sunset-orange;
     transition: all 700ms;
   }
 }
 .stylesforhue-icon svg {
   fill: #898989;
   &:hover text {
-    fill: $light-blue;
+    fill: $sunset-orange;
     transition: all 700ms;
   }
 }
@@ -274,11 +274,11 @@ ul.nav-list li a {
 .nko-icon svg {
   fill: #898989;
   &:hover text {
-    fill: $light-blue;
+    fill: $sunset-orange;
     transition: all 700ms;
   }
   &:hover rect {
-    fill: $light-blue;
+    fill: $sunset-orange;
     transition: all 700ms;
   }
 }
@@ -473,7 +473,7 @@ a.prev, a.next {
 a.prev:hover, a.next:hover {
   opacity: 1;
   transition: all 0.2s ease;
-  color: $light-blue;
+  color: $sunset-orange;
   transition: all 700ms;
 }
 a.next {
@@ -528,9 +528,15 @@ a{
   overflow: hidden;
   @include medium {
     position: inherit;
+    h2 {
+      text-align: center;
+    }
   }
   @include small {
     position: inherit;
+    h2 {
+      text-align: center;
+    }
   }
 }
 .description div {
@@ -581,7 +587,7 @@ a{
   width: 80px;
   fill: $arsenic;
   &:hover {
-    fill: $light-blue;
+    fill: $sunset-orange;
     transition: all 700ms;
   }
 }
@@ -590,7 +596,7 @@ a{
   height: 80px;
   fill: $arsenic;
   &:hover {
-    fill: $light-blue;
+    fill: $sunset-orange;
     transition: all 700ms;
   }
 }
@@ -666,10 +672,10 @@ a{
     color: #4C5454;
   }
   &.sticky-header .center-active {
-    color: $rudy-pink;
+    color: $sunset-orange;
   }
   &.sticky-header a:hover {
-    color: $rudy-pink;
+    color: $sunset-orange;
   }
 }
 .nav-center-item a{
@@ -687,10 +693,13 @@ a{
   display: inline-block;
 }
 .center-active {
-  border-bottom: 3px solid $rudy-pink;
+  border-bottom: 3px solid $sunset-orange;
 }
 .center-active nav a:hover {
-  color: $rudy-pink;
+  color: $sunset-orange;
+}
+a.center-active {
+  color: $sunset-orange;
 }
 /////////////////////////////
 ////// HACC 2016 PAGE //////
