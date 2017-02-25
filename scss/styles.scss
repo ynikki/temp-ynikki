@@ -846,18 +846,15 @@ iframe {
 #lightbox {
   margin: 0;
   padding: 0;
-  width: 100%;
-  display: flex;
-  @include medium {
-    flex: 0 1 auto;
-  }
+  display: block;
+  
   & ul {
     list-style: none;
     margin: 0;
     padding: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-flow: wrap row;
   }
   & li {
@@ -865,7 +862,8 @@ iframe {
     padding: 0;
     margin: 10px 0;
     display: block;
-    width: 32%;
+    // width: 32%;
+    width: 380px;
     background: $white;
     cursor: pointer;
 
