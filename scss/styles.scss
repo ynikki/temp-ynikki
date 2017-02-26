@@ -162,6 +162,9 @@ a.nav-list-item {
 /////////   CENTERING   ////////
 ////////   NAVIGATION  ////////
 //////////////////////////////
+.index-wrap #nav-center {
+  background: $seafoam-green;
+}
 .hacc-wrap #nav-center {
   background: #6adba2;
 }
@@ -181,8 +184,8 @@ a.nav-list-item {
     z-index: 10;
     transition: 0.2s ease all;
   }
-  &.sticky-header a {
-    color: #4C5454;
+  &.sticky-header a:active {
+      color: $sunset-orange;
   }
   &.sticky-header .center-active {
     color: $sunset-orange;
@@ -190,9 +193,6 @@ a.nav-list-item {
   &.sticky-header a:hover {
     color: $sunset-orange;
   }
-}
-.nav-center-item a{
-  color: $white;
 }
 #nav-center nav a {
   position: fixed;
@@ -298,6 +298,9 @@ a.center-active {
   align-items: center;
   flex-direction: column;
 }
+.index-photo {
+  background: linear-gradient(180deg, $wild-watermelon, $seafoam-green);
+}
 .artwork {
   display: flex;
   justify-content: center;
@@ -369,11 +372,33 @@ a.center-active {
     transition: all 700ms;
   }
 }
+.active svg#hacc_logo {
+  fill: $sunset-orange;
+}
+.active svg#styles_logo {
+  & text{
+    fill: $sunset-orange;
+  }
+  & text {
+    fill: $sunset-orange;
+  }
+}
+.active svg#nko_logo {
+  & text {
+    fill: $sunset-orange;
+  }
+  & rect {
+    fill: $sunset-orange;
+  }
+}
 .stylesforhue-icon svg {
   fill: #898989;
   &:hover text {
     fill: $sunset-orange;
     transition: all 700ms;
+  }
+  &:active text {
+    fill: $sunset-orange;
   }
 }
 .nko-icon svg {
@@ -385,6 +410,12 @@ a.center-active {
   &:hover rect {
     fill: $sunset-orange;
     transition: all 700ms;
+  }
+  &:active text {
+    fill: $sunset-orange;
+  }
+  &:active rect {
+    fill: $sunset-orange;
   }
 }
 .work-info {
