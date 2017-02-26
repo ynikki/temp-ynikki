@@ -37,12 +37,12 @@ strong {
 h1, h2 {
   font-weight: 700;
   font-size: 1.8rem;
-  line-height: 1.3;
+  line-height: 1.8;
   text-transform: uppercase;
 }
 p {
   font-weight: 200;
-  line-height: 1.8;
+  line-height: 1.1;
   font-size: 1.2rem;
 }
 a {
@@ -89,6 +89,9 @@ nav {
     }
   }
 }
+a.nav-list {
+  color: $sunset-orange;
+}
 ul.nav-list {
   list-style: none;
   margin: 0;
@@ -106,6 +109,110 @@ ul.nav-list li a {
     display: inline-block;
     margin-left: 35px;
   }
+}
+a.nav-list-item {
+  color: $sunset-orange;
+}
+////////////////////////////////
+///////  NAVIGATION    ////////
+//////  FOR ALL PAGES ////////
+/////////////////////////////
+#nav-wrap {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: 150px;
+}
+#wrap nav {
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+  }
+}
+#banner-photo {
+  top: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+  z-index: 999;
+  height: 400px;
+  transition: 0.2s ease all;
+  &.is-open {
+    max-height: 100%;
+    position: fixed;
+    top: 0;
+    overflow: scroll;
+    background: rgba(216, 216, 216, 0.94);
+    opacity: 1;
+  }
+}
+#banner-photo header nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/////////////////////////////////
+/////////   CENTERING   ////////
+////////   NAVIGATION  ////////
+//////////////////////////////
+.hacc-wrap #nav-center {
+  background: #6adba2;
+}
+#nav-center {
+  text-align: center;
+  display: inline-block;
+  list-style-type: none;
+  position: relative;
+  top: 0;
+  &.sticky-header {
+    background: rgba(222, 222, 224, 0.94);
+    width: 100%;
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: 0.2s ease all;
+  }
+  &.sticky-header a {
+    color: #4C5454;
+  }
+  &.sticky-header .center-active {
+    color: $sunset-orange;
+  }
+  &.sticky-header a:hover {
+    color: $sunset-orange;
+  }
+}
+.nav-center-item a{
+  color: $white;
+}
+#nav-center nav a {
+  position: fixed;
+  display: inline-block;
+  transition: 0.2s ease all;
+}
+#nav-center li {
+  display: inline-block;
+}
+#nav-center a {
+  display: inline-block;
+}
+.center-active {
+  border-bottom: 3px solid $sunset-orange;
+}
+.center-active nav a:hover {
+  color: $sunset-orange;
+}
+a.center-active {
+  color: $sunset-orange;
 }
 ////////// BANNER  ///////////
 .banner {
@@ -211,6 +318,7 @@ ul.nav-list li a {
   display: flex;
   justify-content: center;
   align-content: center;
+  margin-top: 15px;
   @include medium {
     display: block;
   }
@@ -267,9 +375,6 @@ ul.nav-list li a {
     fill: $sunset-orange;
     transition: all 700ms;
   }
-}
-.nko-icon {
-  margin-bottom: -25px;
 }
 .nko-icon svg {
   fill: #898989;
@@ -473,7 +578,7 @@ a.prev, a.next {
 a.prev:hover, a.next:hover {
   opacity: 1;
   transition: all 0.2s ease;
-  color: $sunset-orange;
+  color: $amazonite;
   transition: all 700ms;
 }
 a.next {
@@ -526,6 +631,10 @@ a{
   background-color: $white;
   display: none;
   overflow: hidden;
+  h2 {
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
   @include medium {
     position: inherit;
     h2 {
@@ -554,12 +663,10 @@ a{
   flex-direction: column;
   @include medium {
     height: 100%;
-    display: inline-block;
   }
 
   @include small {
     height: 100%;
-    display: inline-block;
   }
 }
 .content {
@@ -600,107 +707,7 @@ a{
     transition: all 700ms;
   }
 }
-////////////////////////////////
-///////  NAVIGATION    ////////
-//////  FOR ALL PAGES ////////
-/////////////////////////////
-#nav-wrap {
-  overflow: hidden;
-  display: block;
-  width: 100%;
-  height: 150px;
-}
-#wrap nav {
-  display: block;
-  overflow: hidden;
-  margin: 0 auto;
-  ul {
-    display: inline-block;
-    list-style-type: none;
-  }
-  li {
-    display: inline-block;
-    margin: 10px;
-    padding: 5px;
-  }
-}
-#banner-photo {
-  top: 0;
-  overflow: hidden;
-  transition: all 0.3s;
-  z-index: 999;
-  height: 400px;
-  transition: 0.2s ease all;
-  &.is-open {
-    max-height: 100%;
-    position: fixed;
-    top: 0;
-    overflow: scroll;
-    background: rgba(216, 216, 216, 0.94);
-    opacity: 1;
-  }
-}
-#banner-photo header nav {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-/////////////////////////////////
-/////////   CENTERING   ////////
-////////   NAVIGATION  ////////
-//////////////////////////////
-.hacc-wrap #nav-center {
-  background: #6adba2;
-}
-#nav-center {
-  text-align: center;
-  display: inline-block;
-  list-style-type: none;
-  position: relative;
-  top: 0;
-  &.sticky-header {
-    background: rgba(222, 222, 224, 0.94);
-    width: 100%;
-    position: fixed;
-    display: inline-block;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    transition: 0.2s ease all;
-  }
-  &.sticky-header a {
-    color: #4C5454;
-  }
-  &.sticky-header .center-active {
-    color: $sunset-orange;
-  }
-  &.sticky-header a:hover {
-    color: $sunset-orange;
-  }
-}
-.nav-center-item a{
-  color: $white;
-}
-#nav-center nav a {
-  position: fixed;
-  display: inline-block;
-  transition: 0.2s ease all;
-}
-#nav-center li {
-  display: inline-block;
-}
-#nav-center a {
-  display: inline-block;
-}
-.center-active {
-  border-bottom: 3px solid $sunset-orange;
-}
-.center-active nav a:hover {
-  color: $sunset-orange;
-}
-a.center-active {
-  color: $sunset-orange;
-}
+
 /////////////////////////////
 ////// HACC 2016 PAGE //////
 ///////////////////////////
@@ -708,6 +715,12 @@ a.center-active {
   max-width: 1200px;
   margin: 0 auto;
   padding: 5% 5%;
+
+  @include medium {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 5% 5%;
+  }
 }
 #wrap {
   position: relative;
