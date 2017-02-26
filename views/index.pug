@@ -7,18 +7,18 @@ html(lang="en")
     link(href='/css/styles.css' rel='stylesheet')
     link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet")
   body
-    header.banner
-      .grid
-        nav(role="navigation")
-          ul(class="nav-list")
-            li.nav-list-item
-              a(class="active" href="#home") Home
-            li.nav-list-item
-              a(href="#work") Work
-            li.nav-list-item
-              a(href="#about") About
-    .hero#hero
-      h1.hero-title ynikki
+    #wrap.index-wrap
+      header#banner-photo.index-photo
+        h1.site-text ynikki
+      nav#nav-center(role="navigation")
+        span.menu#toggle-menu
+        ul.nav-bar
+          li.nav-center-item
+            a(href="#home") Home
+          li.nav-center-item
+            a(href="#work") Work
+          li.nav-center-item
+            a(href="#about") About
     main.section#home(role="main")
       .grid
         h2 Oh, hai!
@@ -110,5 +110,6 @@ html(lang="en")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
     script(src="/js/banner.js")
     script(src="/js/navslider.js")
+    script(src="/js/navscroll.js")
     script(src="/js/egghead.js")
     script(src="/js/icons.js")
