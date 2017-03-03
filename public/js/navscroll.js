@@ -31,7 +31,6 @@ $(function() {
 
         nav.find('a[href="/'+ location.pathname.split("/")[1] +'"]').addClass('center-active');
       }
-      onScroll();
     });
   });
 
@@ -47,48 +46,6 @@ $(function() {
     return false;
   });
 
-  ////// For the Index Page ///////
-  $(document).on("scroll", onScroll);
-
-  $('a[href^="#"]').on('click', function(e) {
-    e.preventDefault();
-    $(document).off("scroll");
-
-    $('a').each(function() {
-      $(this).removeClass('center-active');
-    });
-
-    $(this).addClass('center-active');
-
-    var target = this.hash;
-    var menu = target;
-
-    $target = $(target);
-
-    $('html, body').stop().animate({
-      'scrollTop': $target.offset().top+2
-    }, 500, 'swing', function() {
-      window.location.hash = target;
-      $(document).on('scroll', onScroll);
-    });
-  });
-
-  function onScroll(event) {
-    var scrollPos = $(document).scrollTop();
-
-    $('#nav-center a').each(function() {
-      var currLink = $(this);
-      var refElement = $(currLink.attr("href"));
-
-      if(refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-        $('#nav-center ul li a').removeClass('center-active');
-
-        currLink.addClass('center-active');
-      } else {
-        currLink.removeClass('center-active');
-      }
-    });
-  }
 
   $('#nav-toggle').click(function() {
     $('nav ul').slideToggle();
