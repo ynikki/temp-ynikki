@@ -28,7 +28,6 @@ $(function() {
         nav.find('a').removeClass('center-active');
 
         main.removeClass('center-active');
-        // $(this).addClass('center-active');
       }
       onScroll();
     });
@@ -75,4 +74,4 @@ $(function() {
       }
     });
   }
-  });
+});
