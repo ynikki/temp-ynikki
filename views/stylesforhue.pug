@@ -1,7 +1,47 @@
 doctype html
 include includes/head.pug
 body
-  #wrap
+  #wrap.styles-wrap
     header#banner-photo.styles-photo
-      h1 Styles For Hue
+      h1.site-text Styles For Hue
     include includes/centernav.pug
+  .page-wrap
+    main#intro.styles-intro
+      .group-photo
+        img(src="/images/stylesforhue/styles_group.jpg")
+      .intro-topic
+        h1 Styles For You
+        p During our last month in DevLeague we discussed our ideas and formed teams around a certain idea.
+      section.group-intro
+        .group-topic
+          h1 Our Team
+          p The app that we decided to create
+        .site-video
+          iframe(width="560" height="315" src="https://www.youtube.com/embed/RW58JIfK6zc" frameborder="0" allowfullscreen)
+      section#layout-images
+        .layout
+          h1 Layout Design
+          p The layout design for this project were created in Sketch - Professional Digital Design for Mac. The design for the functionality of the site I sketched.
+        #lightbox
+          ul.ul-list
+            li.il-list
+              img(src="/images/stylesforhue/sketches/indexpage.png")
+              .image-title
+                h5 Index Page
+            li.il-list
+              img(src="/images/stylesforhue/sketches/editpage.png")
+              .image-title
+                h5 Edit Page
+            li.il-list
+              img(src="/images/stylesforhue/sketches/Version_01(details_edit).jpeg")
+              .image-title
+                h5 Sketch of the Edit
+            li.il-list
+              img(src="/images/stylesforhue/sketches/Version_02.jpeg")
+              .image-title
+                h5 Sketch for the Edit
+            li.il-list
+              img(src="/images/stylesforhue/sketches/Version_03.jpeg")
+              .image-title
+                h5 Sketch to show selection
+  include includes/sourcefiles.pug
