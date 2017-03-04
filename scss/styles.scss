@@ -42,7 +42,7 @@ h1, h2 {
 }
 p {
   font-weight: 200;
-  line-height: 1.1;
+  line-height: 1.5;
   font-size: 1.2rem;
 }
 a {
@@ -803,6 +803,7 @@ a{
 .logos {
   list-style-type: none;
   text-align: center;
+  margin-top: 15px;
   li {
     display: inline-block;
   }
