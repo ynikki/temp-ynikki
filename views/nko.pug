@@ -1,7 +1,22 @@
 doctype html
 include includes/head.pug
 body
-  #wrap
+  #wrap.nko-wrpa
     header#banner-photo.nko-photo
-      h1 NKO
+      .bg-one
+      .bg-two
+      h1.site-text NKO
     include includes/centernav.pug
+  .page-wrap
+    main#intro.nko-intro
+      .group-photo
+      .intro-topic
+        h1 Node Knockout
+        p
+    section.group-intro
+      .group-topic
+        h1 Our Team
+        p 
+      .site-video
+        iframe(width="560" height="315" src="https://www.youtube.com/embed/bNmu4PCa30I" frameborder="0" allowfullscreen)
+  include includes/sourcefiles.pug
