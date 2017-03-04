@@ -1,8 +1,8 @@
 doctype html
 include includes/head.pug
 body
-  #wrap.nko-wrpa
-    header#banner-photo.nko-photo
+  #wrap.nko-wrap
+    header#banner-photo.nko-banner
       .bg-one
       .bg-two
       h1.site-text NKO
@@ -10,13 +10,17 @@ body
   .page-wrap
     main#intro.nko-intro
       .group-photo
+        img(src="/images/nko/nk2016.jpeg")
       .intro-topic
         h1 Node Knockout
-        p
+        p Node Knockout is a 48-hour hackathon. Contestants around the world can participate in this 48-hour hackathon. This hackathon is the world's biggest Node.js programming competition.
     section.group-intro
       .group-topic
         h1 Our Team
-        p 
+        p Within the 48-hour hackathon we created a game that is similar to hangman. This game tests beginner web developers knowledge about Javascript, CSS/HTML, and Node.js. 
+        p If you're curious to see our site. Click 
+          strong
+            a(href="https://ynikki.github.io/nodeknockout2016-looksgood/" target="_blank") here.
       .site-video
         iframe(width="560" height="315" src="https://www.youtube.com/embed/bNmu4PCa30I" frameborder="0" allowfullscreen)
   include includes/sourcefiles.pug
