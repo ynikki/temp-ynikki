@@ -171,6 +171,9 @@ a.nav-list-item {
 .styles-wrap #nav-center {
   background: $pastel-blue;
 }
+.nko-wrap #nav-center {
+  background: $nko-darkgray;
+}
 #nav-center {
   text-align: center;
   display: inline-block;
@@ -872,11 +875,18 @@ a{
 .nko-banner {
   background: $nko-darkgray;
 }
+@font-face {
+  font-family: nkobit;
+  src: url('/font/04B_03__.TTF') format('truetype');
+}
+.nko-banner .site-text {
+  font-family: nkobit;
+  text-transform: none;
+}
 .bg-one {
   background: url('/images/nko/winners-bg1.png') repeat;
   background-position: 0px 0px;
   position: absolute;
-  z-index: 1;
   animation: sidewaysRight 20s linear infinite;
   -webkit-animation: sidewaysRight 20s linear infinite;
   left: 0;
@@ -889,7 +899,6 @@ a{
 .bg-two {
   background: url('/images/nko/winners-bg2.png') repeat;
   position: absolute;
-  z-index: 1;
   animation: sidewaysLeft 40s linear infinite;
   -webkit-animation: sidewaysLeft 40s linear infinite;
   left: 0;
