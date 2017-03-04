@@ -168,6 +168,9 @@ a.nav-list-item {
 .hacc-wrap #nav-center {
   background: #6adba2;
 }
+.styles-wrap #nav-center {
+  background: $pastel-blue;
+}
 #nav-center {
   text-align: center;
   display: inline-block;
@@ -821,7 +824,7 @@ a{
 }
 
 /////////////////////////////
-////// HACC 2016 PAGE //////
+//////  WORK PAGES    //////
 ///////////////////////////
 .page-wrap {
   max-width: 1200px;
@@ -847,11 +850,59 @@ a{
   margin: 0;
   top: 50%;
 }
-.hacc-photo {
+/////////////////////////
+///// HACC BANNER   ////
+///////////////////////
+.hacc-banner {
   background: linear-gradient(180deg, #52b9b3, #6adba2);
   position: relative;
   height: 400px;
 }
+////////////////////////
+/// STYLES FOR HUE  ///
+//////////////////////
+.styles-banner {
+  background: linear-gradient(180deg,$stylesMG, $pastel-blue);
+  position: relative;
+  height: 400px;
+}
+//////////////////////
+//// NKO BANNER  ////
+////////////////////
+.nko-banner {
+  background: $nko-darkgray;
+}
+.bg-one {
+  background: url('/images/nko/winners-bg1.png') repeat;
+  background-position: 0px 0px;
+  position: absolute;
+  z-index: 1;
+  animation: sidewaysRight 20s linear infinite;
+  -webkit-animation: sidewaysRight 20s linear infinite;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.bg-two {
+  background: url('/images/nko/winners-bg2.png') repeat;
+  position: absolute;
+  z-index: 1;
+  animation: sidewaysLeft 40s linear infinite;
+  -webkit-animation: sidewaysLeft 40s linear infinite;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+/////////////////////
+//// STYLE FOR  ////
+/// THE CONTENT ///
+//////////////////
 #intro {
   margin-top: 15%;
   line-height: 1.5rem;
