@@ -854,8 +854,6 @@ a{
 }
 #intro {
   margin-top: 15%;
-}
-.hacc-intro {
   line-height: 1.5rem;
   display: flex;
 
@@ -991,8 +989,9 @@ iframe {
   }
   & li {
     list-style: none;
+    box-sizing: border-box;
     padding: 0;
-    margin: 10px 0;
+    margin-bottom: 10px;
     display: block;
     width: 380px;
     background: $white;
