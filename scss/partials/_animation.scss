@@ -8,3 +8,21 @@
     transform: translateY(14px);
   }
 }
+
+@keyframes sidewaysLeft {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -100% 0;
+  }
+}
+
+@keyframes sidewaysRight {
+  from {
+    background-position: -100% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
