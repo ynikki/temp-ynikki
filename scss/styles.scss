@@ -848,8 +848,6 @@ a{
   top: 50%;
 }
 .hacc-photo {
-  // background: url('/images/hacc/diamondhead.jpg') no-repeat center 50%;
-  // background-size: cover;
   background: linear-gradient(180deg, #52b9b3, #6adba2);
   position: relative;
   height: 400px;
@@ -988,7 +986,7 @@ iframe {
     padding: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-flow: wrap row;
   }
   & li {
