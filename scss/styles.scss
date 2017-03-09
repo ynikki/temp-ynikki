@@ -47,6 +47,7 @@ p {
 }
 a {
   text-decoration: none;
+  color: $arsenic;
 }
 ////////// NAVIGATION //////////
 nav a {
@@ -81,7 +82,7 @@ nav {
     width: 100%;
   }
   a {
-    // color: #000;
+    color: $arsenic;
     font-size: 2.5rem;
     text-transform: uppercase;
     @media only screen and (min-width: 766px) {
@@ -460,22 +461,22 @@ a.center-active {
   }
 }
 .active svg#hacc_logo {
-  fill: $sunset-orange;
+  fill: $teal;
 }
 .active svg#styles_logo {
   & text{
-    fill: $sunset-orange;
+    fill: $stylesMG;
   }
   & text {
-    fill: $sunset-orange;
+    fill: $stylesMG;
   }
 }
 .active svg#nko_logo {
   & text {
-    fill: $sunset-orange;
+    fill: $nko-red;
   }
   & rect {
-    fill: $sunset-orange;
+    fill: $nko-red;
   }
 }
 .stylesforhue-icon svg {
@@ -850,12 +851,12 @@ a{
 .site-text {
   font-size: 6rem;
   letter-spacing: 5px;
-  text-transform: uppercase;
+  text-transform: none;
   color: $white;
   text-align: center;
   position: relative;
   margin: 0;
-  top: 50%;
+  top: 30%;
 }
 /////////////////////////
 ///// HACC BANNER   ////
@@ -872,6 +873,15 @@ a{
   background: linear-gradient(180deg,$stylesMG, $pastel-blue);
   position: relative;
   height: 400px;
+}
+@font-face {
+  font-family: SpellingNight;
+  src: url('/font/SpellingNight.ttf') format('truetype');
+}
+.styles-banner .site-text {
+  font-family: SpellingNight;
+  text-transform: none;
+  text-shadow: 0 2px 3px $dark-liver;
 }
 //////////////////////
 //// NKO BANNER  ////
