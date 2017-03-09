@@ -27,23 +27,10 @@ $(function() {
         nav.find('a').removeClass('center-active');
 
         main.removeClass('center-active');
-        // $(this).addClass('center-active');
 
         nav.find('a[href="/'+ location.pathname.split("/")[1] +'"]').addClass('center-active');
       }
     });
-  });
-
-
-  nav.find('a').on('click', function() {
-    var $el = $(this);
-    var id = $el.attr('href');
-
-    $('html, body').animate({
-      scrollTop: $(id).offset().top - nav_height
-    }, 500)
-
-    return false;
   });
 
 
