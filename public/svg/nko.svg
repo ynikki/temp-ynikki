@@ -3,7 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
   <!ENTITY st0 "fill:none;">
   <!ENTITY st1 "fill:#898989;">
-  <!ENTITY st2 "font-family:'04b03';">
+  <!ENTITY st2 "font-family:'04b03'; src('/font/04B_03__.TTF');">
   <!ENTITY st3 "font-size:11px;">
   <!ENTITY st4 "fill:#C12739;">
   <!ENTITY st5 "fill:#FFFFFF;">
