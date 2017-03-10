@@ -483,6 +483,7 @@ a.center-active {
 }
 .active svg#nko_logo {
   & text {
+    font-family: nkobit;
     fill: $nko-red;
   }
   & rect {
@@ -491,16 +492,20 @@ a.center-active {
 }
 .stylesforhue-icon svg {
   fill: #898989;
+  font-family: SpellingNight;
   &:hover text {
+    font-family: SpellingNight;
     fill: $sunset-orange;
     transition: all 700ms;
   }
   &:active text {
+    font-family: SpellingNight;
     fill: $sunset-orange;
   }
 }
 .nko-icon svg {
   fill: #898989;
+  font-family: nkobit;
   &:hover text {
     font-family: nkobit;
     fill: $sunset-orange;
