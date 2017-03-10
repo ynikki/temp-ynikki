@@ -49,6 +49,14 @@ a {
   text-decoration: none;
   color: $arsenic;
 }
+@font-face {
+  font-family: SpellingNight;
+  src: url('/font/SpellingNight.ttf') format('truetype');
+}
+@font-face {
+  font-family: nkobit;
+  src: url('/font/04B_03__.TTF') format('truetype');
+}
 ////////// NAVIGATION //////////
 nav a {
   position: relative;
@@ -465,9 +473,11 @@ a.center-active {
 }
 .active svg#styles_logo {
   & text{
+    font-family: SpellingNight;
     fill: $stylesMG;
   }
   & text {
+    font-family: SpellingNight;
     fill: $stylesMG;
   }
 }
@@ -492,6 +502,7 @@ a.center-active {
 .nko-icon svg {
   fill: #898989;
   &:hover text {
+    font-family: nkobit;
     fill: $sunset-orange;
     transition: all 700ms;
   }
@@ -500,6 +511,7 @@ a.center-active {
     transition: all 700ms;
   }
   &:active text {
+    font-family: nkobit;
     fill: $sunset-orange;
   }
   &:active rect {
@@ -874,10 +886,6 @@ a{
   position: relative;
   height: 400px;
 }
-@font-face {
-  font-family: SpellingNight;
-  src: url('/font/SpellingNight.ttf') format('truetype');
-}
 .styles-banner .site-text {
   font-family: SpellingNight;
   text-transform: none;
@@ -888,10 +896,6 @@ a{
 ////////////////////
 .nko-banner {
   background: $nko-darkgray;
-}
-@font-face {
-  font-family: nkobit;
-  src: url('/font/04B_03__.TTF') format('truetype');
 }
 .nko-banner .site-text {
   font-family: nkobit;
