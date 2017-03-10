@@ -3,7 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
   <!ENTITY st0 "fill:none;">
   <!ENTITY st1 "fill:#898989;">
-  <!ENTITY st2 "font-family:'SpellingNight-Regular';">
+  <!ENTITY st2 "font-family:'SpellingNight-Regular'; src: url('/font/SpellingNight.ttf');">
   <!ENTITY st3 "font-size:96px;">
 ]>
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
