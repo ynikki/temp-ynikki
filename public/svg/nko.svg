@@ -13,7 +13,7 @@
 <font horiz-adv-x="1000">
 <!-- 1999?2003 / yuji oshimo?o / 04@dsg4.com / www.04.jp.org -->
 <!-- Copyright: Copyright 2017 Adobe System Incorporated. All rights reserved. -->
-<font-face font-family="04b03" units-per-em="1000" underline-position="-133" underline-thickness="20"/>
+<font-face font-family="nkobit" units-per-em="1000" underline-position="-133" underline-thickness="20"/>
 <missing-glyph horiz-adv-x="500" d="M63,0l0,750l375,0l0,-750M125,63l250,0l0,625l-250,0z"/>
 <glyph unicode="." horiz-adv-x="250" d="M0,0l125,0l0,125l-125,0z"/>
 <glyph unicode="d" horiz-adv-x="625" d="M125,126l250,0l0,248l-250,0M125,375l0,125l250,0l0,125l125,0l0,-625l-375,0l0,125l-125,0l0,250z"/>
